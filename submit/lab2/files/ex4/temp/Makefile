@@ -9,11 +9,12 @@ SRC_FILES = \
 	Makefile 
 CFLAGS = -g -Wall -std=c11
 LDFLAGS = -lm
+$(PROJECT):	key-value.o process-file.o main.o
+		$(CC) key-value.o process-file.o main.o -o $@ $(LDFLAGS)
+
 depend:
 	$(CC) -MM $(CPPFLAGS) *.c
 
-$(PROJECT):	key-value.o process-file.o main.o
-		$(CC) key-value.o process-file.o main.o -o $@ $(LDFLAGS)
 
 clean:
 		rm -f *.o $(PROJECT) $(PROJECT).tar.gz
