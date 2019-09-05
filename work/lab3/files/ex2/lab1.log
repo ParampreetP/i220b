@@ -1,0 +1,442 @@
+Script started on 2019-09-05 17:24:46-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="92" LINES="24"]
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ make
+make: 'hello' is up to date.
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ ./hello bar t lisa 'bart'
+Hello Bart
+Hello Lisa
+Hello Bart
+Segmentation fault
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ ./hello bart lisa 'bart' lisa 'bart lisa'
+Hello Bart
+Hello Lisa
+Hello Bart
+Hello Lisa
+Hello Bart Lisaã›e%V
+Segmentation fault
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ gdb hello
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) l 1
+1	#include <ctype.h>
+2	#include <stdio.h>
+3	#include <stdlib.h>
+4	#include <string.h>
+5	
+6	/** Upcase the initial letter of each word from in, copying the
+7	 *  results into out.  The caller is responsible to ensure that out
+8	 *  has enough space for the strlen(in) characters of in.
+9	 */
+10	void
+(gdb) l [K[Kl
+11	upcase_words(const char in[], char out[])
+12	{
+13	  int inWord = 0;
+14	  int n = strlen(in);
+15	  for (int i = 0; i < n; i++) {
+16	    if (!inWord && isalpha(in[i])) {
+17	      out[i] = toupper(in[i]);
+18	    }
+19	    else {
+20	      out[i] = in[i];
+(gdb) l
+21	    }
+22	    inWord = isalpha(in[i]);
+23	  }
+24	}
+25	
+26	static void
+27	say_hello(const char *name)
+28	{
+29	  printf("Hello %s\n", name);
+30	}
+(gdb) l 
+31	
+32	int
+33	main(int argc, const char *argv[])
+34	{
+35	  if (argc == 1) {
+36	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+37	    exit(1);
+38	  }
+39	  else {
+40	    for (int i = 1; i <= argc; i++) {
+(gdb) l
+41	      const char *name = argv[i];
+42	      char friendlyName[strlen(name)];
+43	      upcase_words(name, friendlyName);
+44	      say_hello(friendlyName);
+45	    }
+46	  }
+47	  return 0;
+48	}
+(gdb) start bart lisa 'bart'
+Temporary breakpoint 1 at 0x12be: file hello.c, line 35.
+Starting program: /import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2/hello bart lisa 'bart'
+
+Temporary breakpoint 1, main (argc=4, argv=0x7fffffffe788) at hello.c:35
+35	  if (argc == 1) {
+(gdb) n
+40	    for (int i = 1; i <= argc; i++) {
+(gdb) n
+41	      const char *name = argv[i];
+(gdb) n
+42	      char friendlyName[strlen(name)];
+(gdb) n
+43	      upcase_words(name, friendlyName);
+(gdb) n
+44	      say_hello(friendlyName);
+(gdb) n
+Hello Bart
+40	    for (int i = 1; i <= argc; i++) {
+(gdb) n
+41	      const char *name = argv[i];
+(gdb) p i
+$1 = 2
+(gdb) n
+42	      char friendlyName[strlen(name)];
+(gdb) n
+43	      upcase_words(name, friendlyName);
+(gdb) n
+44	      say_hello(friendlyName);
+(gdb) n
+Hello Lisa
+40	    for (int i = 1; i <= argc; i++) {
+(gdb) n
+41	      const char *name = argv[i];
+(gdb) p i
+$2 = 3
+(gdb) n
+42	      char friendlyName[strlen(name)];
+(gdb) n
+43	      upcase_words(name, friendlyName);
+(gdb) n
+44	      say_hello(friendlyName);
+(gdb) n
+Hello Bart
+40	    for (int i = 1; i <= argc; i++) {
+(gdb) n[Kp i
+$3 = 3
+(gdb) n 
+41	      const char *name = argv[i];
+(gdb) n
+42	      char friendlyName[strlen(name)];
+(gdb) n
+
+Program received signal SIGSEGV, Segmentation fault.
+__strlen_sse2 () at ../sysdeps/x86_64/multiarch/../strlen.S:120
+120	../sysdeps/x86_64/multiarch/../strlen.S: No such file or directory.
+(gdb) n[K n gdb bart lisa bart
+Undefined command: "gdb".  Try "help".
+(gdb) start bart lisa bart
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Temporary breakpoint 2 at 0x5555555552be: file hello.c, line 35.
+Starting program: /import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2/hello bart lisa bart
+
+Temporary breakpoint 2, main (argc=4, argv=0x7fffffffe788) at hello.c:35
+35	  if (argc == 1) {
+(gdb) n
+40	    for (int i = 1; i <= argc; i++) {
+(gdb) n
+41	      const char *name = argv[i];
+(gdb) n
+42	      char friendlyName[strlen(name)];
+(gdb) p ][K[[Kargb[Kv[1]
+$4 = 0x7fffffffeab9 "bart"
+(gdb) p argv[1][K[K2]
+$5 = 0x7fffffffeabe "lisa"
+(gdb) p argv[2][K[K3[[K]
+$6 = 0x7fffffffeac3 "bart"
+(gdb) p argv[3][K[K4]
+$7 = 0x0
+(gdb) p i
+$8 = 1
+(gdb) n
+43	      upcase_words(name, friendlyName);
+(gdb) n
+44	      say_hello(friendlyName);
+(gdb) n
+Hello Bart
+40	    for (int i = 1; i <= argc; i++) {
+(gdb) n
+41	      const char *name = argv[i];
+(gdb) n
+42	      char friendlyName[strlen(name)];
+(gdb) n
+43	      upcase_words(name, friendlyName);
+(gdb) n
+44	      say_hello(friendlyName);
+(gdb) n
+Hello Lisa
+40	    for (int i = 1; i <= argc; i++) {
+(gdb) n
+41	      const char *name = argv[i];
+(gdb) n
+42	      char friendlyName[strlen(name)];
+(gdb) p i
+$9 = 3
+(gdb) p argc
+$10 = 4
+(gdb) p i
+$11 = 3
+(gdb) n
+43	      upcase_words(name, friendlyName);
+(gdb) n
+44	      say_hello(friendlyName);
+(gdb) n
+Hello Bart
+40	    for (int i = 1; i <= argc; i++) {
+(gdb) p i
+$12 = 3
+(gdb) p i[2Pnp iargc
+$13 = 4
+(gdb) n
+41	      const char *name = argv[i];
+(gdb) n
+42	      char friendlyName[strlen(name)];
+(gdb) n
+
+Program received signal SIGSEGV, Segmentation fault.
+__strlen_sse2 () at ../sysdeps/x86_64/multiarch/../strlen.S:120
+120	../sysdeps/x86_64/multiarch/../strlen.S: No such file or directory.
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 10871] will be killed.
+
+Quit anyway? (y or n) y
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ gedit hello .c
+
+(gedit:11092): Gtk-[1;33mWARNING[0m **: [34m17:28:33.093[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ make
+cc -g -Wall -std=c99    hello.c   -o hello
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ ./hello bar t lisa
+Hello Bart
+Hello Lisa
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ ./hello bart lisa 'i[Klisa bart'
+Hello Bart
+Hello Lisa
+Hello Lisa BartcP
+¤U
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ ./hello bart lisa 'lisa bart'[K[K[K[K[K[K[K[K[K[K[K'lisa
+> ^C
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ ./hello bart lisa 'lisa'
+Hello Bart
+Hello Lisa
+Hello Lisa
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ gdb hello
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) start bart lisa 'lisa bart'
+Temporary breakpoint 1 at 0x12be: file hello.c, line 35.
+Starting program: /import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2/hello bart lisa 'lisa bart'
+
+Temporary breakpoint 1, main (argc=4, argv=0x7fffffffe778) at hello.c:35
+35	  if (argc == 1) {
+(gdb) break 15
+Breakpoint 2 at 0x5555555551ab: file hello.c, line 15.
+(gdb) l 15
+10	void
+11	upcase_words(const char in[], char out[])
+12	{
+13	  int inWord = 0;
+14	  int n = strlen(in);
+15	  for (int i = 0; i < n; i++) {
+16	    if (!inWord && isalpha(in[i])) {
+17	      out[i] = toupper(in[i]);
+18	    }
+19	    else {
+(gdb) p i
+No symbol "i" in current context.
+(gdb) n
+40	    for (int i = 1; i < argc; i++) {
+(gdb) next[K[K[K 15
+
+Breakpoint 2, upcase_words (in=0x7fffffffeab4 "bart", out=0x7fffffffe620 "\001")
+    at hello.c:15
+15	  for (int i = 0; i < n; i++) {
+(gdb) n
+16	    if (!inWord && isalpha(in[i])) {
+(gdb) n
+17	      out[i] = toupper(in[i]);
+(gdb) n
+22	    inWord = isalpha(in[i]);
+(gdb)  p i
+$1 = 0
+(gdb) n n[K[K[K[ n[K[K[Kp n
+$2 = 4
+(gdb) n
+15	  for (int i = 0; i < n; i++) {
+(gdb) n
+16	    if (!inWord && isalpha(in[i])) {
+(gdb) n
+20	      out[i] = in[i];
+(gdb) n
+22	    inWord = isalpha(in[i]);
+(gdb) n
+15	  for (int i = 0; i < n; i++) {
+(gdb) n
+16	    if (!inWord && isalpha(in[i])) {
+(gdb) n
+20	      out[i] = in[i];
+(gdb) n
+22	    inWord = isalpha(in[i]);
+(gdb) p i
+$3 = 2
+(gdb) n n[K[K[K[ n[K[K[Kp n
+$4 = 4
+(gdb) n
+15	  for (int i = 0; i < n; i++) {
+(gdb) n
+16	    if (!inWord && isalpha(in[i])) {
+(gdb) n
+20	      out[i] = in[i];
+(gdb) n
+22	    inWord = isalpha(in[i]);
+(gdb) n
+15	  for (int i = 0; i < n; i++) {
+(gdb) n
+24	}
+(gdb) l
+19	    else {
+20	      out[i] = in[i];
+21	    }
+22	    inWord = isalpha(in[i]);
+23	  }
+24	}
+25	
+26	static void
+27	say_hello(const char *name)
+28	{
+(gdb) n[Kp i
+No symbol "i" in current context.
+(gdb) n[Kn 15
+Hello Bart
+
+Breakpoint 2, upcase_words (in=0x7fffffffeab9 "lisa", out=0x7fffffffe620 "Bart")
+    at hello.c:15
+15	  for (int i = 0; i < n; i++) {
+(gdb) n[Kp i
+$5 = -6624
+(gdb) n
+16	    if (!inWord && isalpha(in[i])) {
+(gdb) p i
+$6 = 0
+(gdb) p n
+$7 = 4
+(gdb) p i
+$8 = 0
+(gdb) n
+17	      out[i] = toupper(in[i]);
+(gdb) n
+22	    inWord = isalpha(in[i]);
+(gdb) p i
+$9 = 0
+(gdb) n[Kp n
+$10 = 4
+(gdb) p inwo[K[KWord
+$11 = 0
+(gdb) n
+15	  for (int i = 0; i < n; i++) {
+(gdb) p i
+$12 = 0
+(gdb) n
+16	    if (!inWord && isalpha(in[i])) {
+(gdb) n
+20	      out[i] = in[i];
+(gdb) n
+22	    inWord = isalpha(in[i]);
+(gdb) p i
+$13 = 1
+(gdb) n
+15	  for (int i = 0; i < n; i++) {
+(gdb) n
+16	    if (!inWord && isalpha(in[i])) {
+(gdb) n
+20	      out[i] = in[i];
+(gdb) n
+22	    inWord = isalpha(in[i]);
+(gdb) p i
+$14 = 2
+(gdb) n
+15	  for (int i = 0; i < n; i++) {
+(gdb) n
+16	    if (!inWord && isalpha(in[i])) {
+(gdb) p i
+$15 = 3
+(gdb) n[Kp n
+$16 = 4
+(gdb) p
+$17 = 4
+(gdb) n
+20	      out[i] = in[i];
+(gdb) n
+22	    inWord = isalpha(in[i]);
+(gdb) n
+15	  for (int i = 0; i < n; i++) {
+(gdb) p i
+$18 = 3
+(gdb) n
+24	}
+(gdb) p n
+$19 = 4
+(gdb) n
+main (argc=4, argv=0x7fffffffe778) at hello.c:44
+44	      say_hello(friendlyName);
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 11410] will be killed.
+
+Quit anyway? (y or n) y
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ gedit hello c.,[K[K[K.c
+
+(gedit:12353): Gtk-[1;33mWARNING[0m **: [34m17:37:06.206[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ make
+cc -g -Wall -std=c99    hello.c   -o hello
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ ./hello bar t 'lisa bart'
+Hello Bart
+Hello Lisa Bart
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ ./hello bart 'lisa bart' bart
+Hello Bart
+Hello Lisa Bart
+Hello Bart
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ ./hello bart 'lisa bart' bart 'bart lisa'
+Hello Bart
+Hello Lisa Bart
+Hello Bart
+Hello Bart Lisa
+pparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ clear[Kr
+[H[2J[3Jpparmar2@g7-09:/import/linux/home1/pparmar2/git-repos/i220b/work/lab3/files/ex2$ exit
+
+Script done on 2019-09-05 17:39:27-04:00 [COMMAND_EXIT_CODE="0"]
