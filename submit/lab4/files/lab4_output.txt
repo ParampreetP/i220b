@@ -158,5 +158,5 @@ pparmar2@g7-12:/import/linux/home1/pparmar2/git-repos/i220b/work/lab4/files/ex8$
 
 
 Exercise 9:
-
+hex a-f breaks the loop
 
