@@ -1,0 +1,504 @@
+Script started on 2019-09-19 16:52:40-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="107" LINES="19"]
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ ./[K[Kmake
+cc -g -Wall -std=c11 -m32    in-pointers.c   -o in-pointers
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ ./in-pointers 
+is[] is at 0xffc774dc
+enter pointer to is[1]: ff
+Segmentation fault
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ ./in-pointers make[K./in-pointers 
+is[] is at 0xffc6378c
+enter pointer to is[1]: a
+Segmentation fault
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ clear
+[H[2J[3Jpparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ gdb in-pointers
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from in-pointers...done.
+(gdb) start
+Temporary breakpoint 1 at 0x11f6: file in-pointers.c, line 7.
+Starting program: /import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2/in-pointers 
+
+Temporary breakpoint 1, main () at in-pointers.c:7
+7	  int indexes[] = { 1, 3, 2, 4, 0, 3 };
+(gdb) n
+8	  for (int i = 0; i < sizeof(indexes)/sizeof(indexes[0]); i++) {
+(gdb) n
+9	    int n = indexes[i];
+(gdb) n
+10	    int isOk = 0;
+(gdb) n
+12	      printf("is[] is at %p\n", is);
+(gdb) n
+is[] is at 0xffffd81c
+13	      printf("enter pointer to is[%d]: ", n);
+(gdb) n
+14	      fflush(stdout);
+(gdb) n
+enter pointer to is[1]: 16	      if (scanf("%p", &p) == 1) {
+(gdb) p i[K*p
+Cannot access memory at address 0x0
+(gdb) n
+n
+21	        printf("bad input: enter hex pointer value\n");
+(gdb) n
+bad input: enter hex pointer value
+23	      int c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+25	        c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) p *p[Kp
+Cannot access memory at address 0x0
+(gdb) p i
+$1 = 0
+(gdb) p p
+$2 = (int *) 0x0
+(gdb) n
+27	    } while (!isOk);
+(gdb) n
+12	      printf("is[] is at %p\n", is);
+(gdb) n
+is[] is at 0xffffd81c
+13	      printf("enter pointer to is[%d]: ", n);
+(gdb) n
+14	      fflush(stdout);
+(gdb) n
+enter pointer to is[1]: 16	      if (scanf("%p", &p) == 1) {
+(gdb) n[Kp p
+$3 = (int *) 0x0
+(gdb) p *p
+Cannot access memory at address 0x0
+(gdb) p[Kn
+n
+21	        printf("bad input: enter hex pointer value\n");
+(gdb) n
+bad input: enter hex pointer value
+23	      int c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+25	        c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+27	    } while (!isOk);
+(gdb) n
+12	      printf("is[] is at %p\n", is);
+(gdb) n
+is[] is at 0xffffd81c
+13	      printf("enter pointer to is[%d]: ", n);
+(gdb) n
+14	      fflush(stdout);
+(gdb) n
+enter pointer to is[1]: 16	      if (scanf("%p", &p) == 1) {
+(gdb) n
+n
+21	        printf("bad input: enter hex pointer value\n");
+(gdb) n
+bad input: enter hex pointer value
+23	      int c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+25	        c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+27	    } while (!isOk);
+(gdb) Quit
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 13825] will be killed.
+
+Quit anyway? (y or n) y
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ clar
+bash: clar: command not found
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ clear
+[H[2J[3Jpparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ ./in-pointers 
+is[] is at 0xffe05f7c
+enter pointer to is[1]: 16
+Segmentation fault
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ ./in-pointers 
+is[] is at 0xffd46aac
+enter pointer to is[1]: 1f
+Segmentation fault
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ clear[K[K[K[K[K^C
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ cl;ear[K[K[K[Kear
+[H[2J[3Jpparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ make
+make: 'in-pointers' is up to date.
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ make clean
+rm -f *.o in-pointers
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ make
+cc -g -Wall -std=c11 -m32    in-pointers.c   -o in-pointers
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ make clean[Kclear./in-pointers 
+is[] is at 0xff9dc21c
+enter pointer to is[1]: 16
+Segmentation fault
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ ^C
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ clear
+[H[2J[3Jpparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ gdb in-pointers
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from in-pointers...done.
+(gdb) start
+Temporary breakpoint 1 at 0x11f6: file in-pointers.c, line 7.
+Starting program: /import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2/in-pointers 
+
+Temporary breakpoint 1, main () at in-pointers.c:7
+7	  int indexes[] = { 1, 3, 2, 4, 0, 3 };
+(gdb) n
+8	  for (int i = 0; i < sizeof(indexes)/sizeof(indexes[0]); i++) {
+(gdb) n
+9	    int n = indexes[i];
+(gdb) n
+10	    int isOk = 0;
+(gdb) n
+12	      printf("is[] is at %p\n", is);
+(gdb) n
+is[] is at 0xffffd81c
+13	      printf("enter pointer to is[%d]: ", n);
+(gdb) n
+14	      fflush(stdout);
+(gdb) n
+enter pointer to is[1]: 16	      if (scanf("%p", &p) == 1) {
+(gdb) n
+n
+21	        printf("bad input: enter hex pointer value\n");
+(gdb) p &p
+$1 = (int **) 0xffffd800
+(gdb) n
+bad input: enter hex pointer value
+23	      int c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+25	        c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+27	    } while (!isOk);
+(gdb) n
+12	      printf("is[] is at %p\n", is);
+(gdb) n
+is[] is at 0xffffd81c
+13	      printf("enter pointer to is[%d]: ", n);
+(gdb) p &p
+$2 = (int **) 0xffffd800
+(gdb) n
+14	      fflush(stdout);
+(gdb) n
+enter pointer to is[1]: 16	      if (scanf("%p", &p) == 1) {
+(gdb) nn
+Undefined command: "nn".  Try "help".
+(gdb) n
+n
+21	        printf("bad input: enter hex pointer value\n");
+(gdb) n
+bad input: enter hex pointer value
+23	      int c = getchar();
+(gdb) p p
+$3 = (int *) 0x0
+(gdb) p &p
+$4 = (int **) 0xffffd800
+(gdb) p p
+$5 = (int *) 0x0
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+25	        c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+27	    } while (!isOk);
+(gdb) n
+12	      printf("is[] is at %p\n", is);
+(gdb) n
+is[] is at 0xffffd81c
+13	      printf("enter pointer to is[%d]: ", n);
+(gdb) n
+14	      fflush(stdout);
+(gdb) n
+enter pointer to is[1]: 16	      if (scanf("%p", &p) == 1) {
+(gdb) p $p
+$6 = void
+(gdb)  [Kn
+n
+21	        printf("bad input: enter hex pointer value\n");
+(gdb) p &p
+$7 = (int **) 0xffffd800
+(gdb) p[Kn
+bad input: enter hex pointer value
+23	      int c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+25	        c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+27	    } while (!isOk);
+(gdb) n
+12	      printf("is[] is at %p\n", is);
+(gdb) n
+is[] is at 0xffffd81c
+13	      printf("enter pointer to is[%d]: ", n);
+(gdb) n
+14	      fflush(stdout);
+(gdb) n
+enter pointer to is[1]: 16	      if (scanf("%p", &p) == 1) {
+(gdb) n
+p &n p
+21	        printf("bad input: enter hex pointer value\n");
+(gdb) p &p
+$8 = (int **) 0xffffd800
+(gdb) n
+bad input: enter hex pointer value
+23	      int c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+25	        c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+25	        c = getchar();
+(gdb) p &p
+$9 = (int **) 0xffffd800
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+25	        c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+25	        c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+27	    } while (!isOk);
+(gdb) n
+12	      printf("is[] is at %p\n", is);
+(gdb) n
+is[] is at 0xffffd81c
+13	      printf("enter pointer to is[%d]: ", n);
+(gdb) n
+14	      fflush(stdout);
+(gdb) n
+enter pointer to is[1]: 16	      if (scanf("%p", &p) == 1) {
+(gdb) n
+n
+21	        printf("bad input: enter hex pointer value\n");
+(gdb) n
+bad input: enter hex pointer value
+23	      int c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+25	        c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+27	    } while (!isOk);
+(gdb) n
+12	      printf("is[] is at %p\n", is);
+(gdb) n
+is[] is at 0xffffd81c
+13	      printf("enter pointer to is[%d]: ", n);
+(gdb) n
+14	      fflush(stdout);
+(gdb) n
+enter pointer to is[1]: 16	      if (scanf("%p", &p) == 1) {
+(gdb) n
+n 16
+17	        isOk = (*p == is[n]);
+(gdb) n
+
+Program received signal SIGSEGV, Segmentation fault.
+0x5655629a in main () at in-pointers.c:17
+17	        isOk = (*p == is[n]);
+(gdb) nn
+Undefined command: "nn".  Try "help".
+(gdb) n
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+(gdb) n
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) q
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ y
+bash: y: command not found
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$  [Kclear
+[H[2J[3Jpparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ ./in-pointers 
+is[] is at 0xffdf4e7c
+enter pointer to is[1]: 4
+Segmentation fault
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ clear
+[H[2J[3Jpparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ clear./in-pointers 
+is[] is at 0xffd0e86c
+enter pointer to is[1]: 0xffd0e86d
+not ok
+is[] is at 0xffd0e86c
+enter pointer to is[1]: 0xffd0 0e88f
+not ok
+is[] is at 0xffd0e86c
+enter pointer to is[1]: ^[[A^[[B^[[B            0xffd0e86 87f
+Segmentation fault
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ ./in-pointers 
+is[] is at 0xffe1931c
+enter pointer to is[1]: 0xffd0  e1933f
+not ok
+is[] is at 0xffe1931c
+enter pointer to is[1]: 0xffe193ff
+not ok
+is[] is at 0xffe1931c
+enter pointer to is[1]: 0xffe1921  39c f
+not ok
+is[] is at 0xffe1931c
+enter pointer to is[1]: 0xffe193af
+not ok
+is[] is at 0xffe1931c
+enter pointer to is[1]: 0xffe192f
+Segmentation fault
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ ./in-pointers 
+is[] is at 0xffcaccfc
+enter pointer to is[1]: 0xffcacc cf  dff
+not ok
+is[] is at 0xffcaccfc
+enter pointer to is[1]: 0xffc^C
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ clear
+[H[2J[3Jpparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ ./in-pointers 
+is[] is at 0xffddc85c
+enter pointer to is[1]: 0xffddc^C
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ clear
+[H[2J[3Jpparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ ./in-pointers [K[K[K[K[K[K[K[K[K[K[K[K[K[Kgdb in-pointers
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from in-pointers...done.
+(gdb) start
+Temporary breakpoint 1 at 0x11f6: file in-pointers.c, line 7.
+Starting program: /import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2/in-pointers 
+
+Temporary breakpoint 1, main () at in-pointers.c:7
+7	  int indexes[] = { 1, 3, 2, 4, 0, 3 };
+(gdb) n
+8	  for (int i = 0; i < sizeof(indexes)/sizeof(indexes[0]); i++) {
+(gdb) n
+9	    int n = indexes[i];
+(gdb) n
+10	    int isOk = 0;
+(gdb) n
+12	      printf("is[] is at %p\n", is);
+(gdb) n
+is[] is at 0xffffd81c
+13	      printf("enter pointer to is[%d]: ", n);
+(gdb) n
+14	      fflush(stdout);
+(gdb) n
+enter pointer to is[1]: 16	      if (scanf("%p", &p) == 1) {
+(gdb) p *p
+Cannot access memory at address 0x0
+(gdb) p[K*[K*is[1]
+Undefined command: "".  Try "help".
+(gdb) p *is[1]
+$1 = -134663680
+(gdb) p *is[1][1Pis[1]
+$2 = -134667268
+(gdb) n
+0xffffd80f
+17	        isOk = (*p == is[n]);
+(gdb) n
+18	        printf("%s\n", isOk ? "ok" : "not ok");
+(gdb) n
+not ok
+23	      int c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+27	    } while (!isOk);
+(gdb) n
+12	      printf("is[] is at %p\n", is);
+(gdb) n
+is[] is at 0xffffd81c
+13	      printf("enter pointer to is[%d]: ", n);
+(gdb) n
+14	      fflush(stdout);
+(gdb) n
+enter pointer to is[1]: 16	      if (scanf("%p", &p) == 1) {
+(gdb) n
+0xffffd81 ff  ef
+17	        isOk = (*p == is[n]);
+(gdb) n
+18	        printf("%s\n", isOk ? "ok" : "not ok");
+(gdb) n
+not ok
+23	      int c = getchar();
+(gdb) n
+24	      while (c != '\n' && c != EOF) { //waste line
+(gdb) n
+27	    } while (!isOk);
+(gdb) n
+12	      printf("is[] is at %p\n", is);
+(gdb) n
+is[] is at 0xffffd81c
+13	      printf("enter pointer to is[%d]: ", n);
+(gdb) n
+14	      fflush(stdout);
+(gdb) n
+enter pointer to is[1]: 16	      if (scanf("%p", &p) == 1) {
+(gdb) n
+0xffffd81 q
+17	        isOk = (*p == is[n]);
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 16813] will be killed.
+
+Quit anyway? (y or n) y
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ clear
+[H[2J[3Jpparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex2$ ./in-pointers 
+is[] is at 0xff9734bc
+enter point
