@@ -1,0 +1,46 @@
+Script started on 2019-09-20 15:37:39-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex6$ make
+cc -g -Wall -std=c11 -m32    in-voids.c   -o in-voids
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex6$ ./in-voids 
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to is[2]: FF9FF3DC
+ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to cs[3]: FF9FF3E6
+not ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to cs[3]: FF9FF3E0
+not ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to cs[3]: ff9ff3ec
+not ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to cs[3]: ff9ff3ec  ef 0
+not ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to cs[3]: ff9ff3ec c
+not ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to cs[3]: ff9ff3eb c
+not ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to cs[3]: ff9ff3eb e
+ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to is[4]: ff9ff3ea
+not ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to is[4]: ff9ff3e4
+ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to cs[1]: ff9ff3eb c
+ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to cs[4]: ff9ff3eb;  f
+ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to is[1]: ff9ff3d8
+ok
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex6$ exit
+
+Script done on 2019-09-20 15:43:08-04:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,17 @@
+Script started on 2019-09-20 15:36:06-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="101" LINES="19"]
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex4$ make
+cc -g -Wall -std=c11 -m32    cast-types.c   -o cast-types
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex4$ ./cast-types 
+char pointer cp = 0xfff87864, pointing at int 1 (0x1)
+char pointer cp = 0xfff87868, pointing at int 2 (0x2)
+char pointer cp = 0xfff8786c, pointing at int 3 (0x3)
+char pointer cp = 0xfff87870, pointing at int 4 (0x4)
+char pointer cp = 0xfff87874, pointing at int 5 (0x5)
+int pointer ip = 0xfff8787b, pointing at char 'a' (0x64636261)
+int pointer ip = 0xfff8787c, pointing at char 'b' (0x65646362)
+int pointer ip = 0xfff8787d, pointing at char 'c' (0x2656463)
+int pointer ip = 0xfff8787e, pointing at char 'd' (0x36564)
+int pointer ip = 0xfff8787f, pointing at char 'e' (0x465)
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex4$ exit
+
+Script done on 2019-09-20 15:36:30-04:00 [COMMAND_EXIT_CODE="0"]

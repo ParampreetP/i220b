@@ -1,0 +1,113 @@
+::::EXERCISE 1::::
+Script started on 2019-09-19 16:41:32-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="97" LINES="21"]
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex1$ gedit pointers.c 
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex1$ make
+cc -g -Wall -std=c11 -m32    pointers.c   -o pointers
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex1$ ./pointers 
+char pointer cp = 0xffcab7db, pointing at char a
+char pointer cp = 0xffcab7dc, pointing at char b
+char pointer cp = 0xffcab7dd, pointing at char c
+char pointer cp = 0xffcab7de, pointing at char d
+char pointer cp = 0xffcab7df, pointing at char e
+int pointer ip = 0xffcab7c4, pointing at int 1
+int pointer ip = 0xffcab7c8, pointing at int 2
+int pointer ip = 0xffcab7cc, pointing at int 3
+int pointer ip = 0xffcab7d0, pointing at int 4
+int pointer ip = 0xffcab7d4, pointing at int 5
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex1$ ./pointers 
+char pointer cp = 0xff96e15b, pointing at char a
+char pointer cp = 0xff96e15c, pointing at char b
+char pointer cp = 0xff96e15d, pointing at char c
+char pointer cp = 0xff96e15e, pointing at char d
+char pointer cp = 0xff96e15f, pointing at char e
+int pointer ip = 0xff96e144, pointing at int 1
+int pointer ip = 0xff96e148, pointing at int 2
+int pointer ip = 0xff96e14c, pointing at int 3
+int pointer ip = 0xff96e150, pointing at int 4
+int pointer ip = 0xff96e154, pointing at int 5
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex1$ ./pointers 
+char pointer cp = 0xfff30c5b, pointing at char a
+char pointer cp = 0xfff30c5c, pointing at char b
+char pointer cp = 0xfff30c5d, pointing at char c
+char pointer cp = 0xfff30c5e, pointing at char d
+char pointer cp = 0xfff30c5f, pointing at char e
+int pointer ip = 0xfff30c44, pointing at int 1
+int pointer ip = 0xfff30c48, pointing at int 2
+int pointer ip = 0xfff30c4c, pointing at int 3
+int pointer ip = 0xfff30c50, pointing at int 4
+int pointer ip = 0xfff30c54, pointing at int 5
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex1$ exit
+
+Script done on 2019-09-19 16:42:40-04:00 [COMMAND_EXIT_CODE="0"]
+
+:::EXERCISE 3::::
+
+Script started on 2019-09-20 15:34:25-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex3$ make
+make: 'bad-types' is up to date.
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex3$ make clean
+rm -f *.o bad-types
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex3$ make
+cc -g -Wall -std=c11 -m32    bad-types.c   -o bad-types
+[01m[Kbad-types.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kbad-types.c:6:14:[m[K [01;35m[Kwarning: [m[Kinitialization of ‘[01m[Kchar *[m[K’ from incompatible pointer type ‘[01m[Kint *[m[K’ [[01;35m[K-Wincompatible-pointer-types[m[K]
+   char *cp = [01;35m[Kis[m[K;
+              [01;35m[K^~[m[K
+[01m[Kbad-types.c:7:13:[m[K [01;35m[Kwarning: [m[Kinitialization of ‘[01m[Kint *[m[K’ from incompatible pointer type ‘[01m[Kchar *[m[K’ [[01;35m[K-Wincompatible-pointer-types[m[K]
+   int *ip = [01;35m[Kcs[m[K;
+             [01;35m[K^~[m[K
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex3$ ./bad-types 
+char pointer cp = 0xffcda904, pointing at char '' (0x1)
+char pointer cp = 0xffcda905, pointing at char '\00' (0x0)
+char pointer cp = 0xffcda906, pointing at char '\00' (0x0)
+char pointer cp = 0xffcda907, pointing at char '\00' (0x0)
+char pointer cp = 0xffcda908, pointing at char '' (0x2)
+int pointer ip = 0xffcda91b, pointing at int 1684234849 (0x64636261)
+int pointer ip = 0xffcda91f, pointing at int 357 (0x165)
+int pointer ip = 0xffcda923, pointing at int 1280 (0x500)
+int pointer ip = 0xffcda927, pointing at int -844552448 (0xcda92700)
+int pointer ip = 0xffcda92b, pointing at int -844559873 (0xcda909ff)
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex3$ exit
+
+Script done on 2019-09-20 15:34:35-04:00 [COMMAND_EXIT_CODE="0"]
+
+::EXERCISE 4:::
+
+Script started on 2019-09-20 15:36:06-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="101" LINES="19"]
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex4$ make
+cc -g -Wall -std=c11 -m32    cast-types.c   -o cast-types
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex4$ ./cast-types 
+char pointer cp = 0xfff87864, pointing at int 1 (0x1)
+char pointer cp = 0xfff87868, pointing at int 2 (0x2)
+char pointer cp = 0xfff8786c, pointing at int 3 (0x3)
+char pointer cp = 0xfff87870, pointing at int 4 (0x4)
+char pointer cp = 0xfff87874, pointing at int 5 (0x5)
+int pointer ip = 0xfff8787b, pointing at char 'a' (0x64636261)
+int pointer ip = 0xfff8787c, pointing at char 'b' (0x65646362)
+int pointer ip = 0xfff8787d, pointing at char 'c' (0x2656463)
+int pointer ip = 0xfff8787e, pointing at char 'd' (0x36564)
+int pointer ip = 0xfff8787f, pointing at char 'e' (0x465)
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex4$ exit
+
+Script done on 2019-09-20 15:36:30-04:00 [COMMAND_EXIT_CODE="0"]
+
+
+::EXERCISE 5::
+
+Script started on 2019-09-20 15:37:05-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex5$ make
+cc -g -Wall -std=c11 -m32    void-pointers.c   -o void-pointers
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex5$ ./void-pointers 
+void pointer p = 0xffac9a7f, pointing at char a
+void pointer p = 0xffac9a80, pointing at char b
+void pointer p = 0xffac9a81, pointing at char c
+void pointer p = 0xffac9a82, pointing at char d
+void pointer p = 0xffac9a83, pointing at char e
+void pointer p = 0xffac9a68, pointing at int 1
+void pointer p = 0xffac9a6c, pointing at int 2
+void pointer p = 0xffac9a70, pointing at int 3
+void pointer p = 0xffac9a74, pointing at int 4
+void pointer p = 0xffac9a78, pointing at int 5
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex5$ exit
+
+Script done on 2019-09-20 15:37:20-04:00 [COMMAND_EXIT_CODE="0"]

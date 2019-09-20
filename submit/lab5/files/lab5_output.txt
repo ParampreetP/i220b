@@ -1,32 +1,4 @@
-EXERCISE 1:
-
-pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex1$ make
-cc -g -Wall -std=c11 -m32    pointers.c   -o pointers
-pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex1$ ./pointers 
-char pointer cp = 0xffcab7db, pointing at char a
-char pointer cp = 0xffcab7dc, pointing at char b
-char pointer cp = 0xffcab7dd, pointing at char c
-char pointer cp = 0xffcab7de, pointing at char d
-char pointer cp = 0xffcab7df, pointing at char e
-int pointer ip = 0xffcab7c4, pointing at int 1
-int pointer ip = 0xffcab7c8, pointing at int 2
-int pointer ip = 0xffcab7cc, pointing at int 3
-int pointer ip = 0xffcab7d0, pointing at int 4
-int pointer ip = 0xffcab7d4, pointing at int 5
-pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex1$ ./pointers 
-char pointer cp = 0xff96e15b, pointing at char a
-char pointer cp = 0xff96e15c, pointing at char b
-char pointer cp = 0xff96e15d, pointing at char c
-char pointer cp = 0xff96e15e, pointing at char d
-char pointer cp = 0xff96e15f, pointing at char e
-int pointer ip = 0xff96e144, pointing at int 1
-int pointer ip = 0xff96e148, pointing at int 2
-int pointer ip = 0xff96e14c, pointing at int 3
-int pointer ip = 0xff96e150, pointing at int 4
-int pointer ip = 0xff96e154, pointing at int 5
-
-
-EXERCISE 2:
+:::EXERCISE 2:::
 is[] is at 0xfffa514c
 enter pointer to is[1]: 0xfffa5150
 ok
@@ -44,5 +16,26 @@ enter pointer to is[0]: 0xfffa514c
 ok
 is[] is at 0xfffa514c
 enter pointer to is[3]: 0xfffa5158
+ok
+
+:::EXERCISE 6:::
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex6$ ./in-voids 
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to is[2]: FF9FF3DC
+ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to cs[3]: ff9ff3ee
+ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to is[4]: ff9ff3e4
+ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to cs[1]: ff9ff3ec
+ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to cs[4]: ff9ff3ef 
+ok
+cs[] is at 0xff9ff3eb; is[] is at 0xff9ff3d4
+enter pointer to is[1]: ff9ff3d8
 ok
 

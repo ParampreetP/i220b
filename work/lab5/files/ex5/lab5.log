@@ -1,0 +1,17 @@
+Script started on 2019-09-20 15:37:05-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex5$ make
+cc -g -Wall -std=c11 -m32    void-pointers.c   -o void-pointers
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex5$ ./void-pointers 
+void pointer p = 0xffac9a7f, pointing at char a
+void pointer p = 0xffac9a80, pointing at char b
+void pointer p = 0xffac9a81, pointing at char c
+void pointer p = 0xffac9a82, pointing at char d
+void pointer p = 0xffac9a83, pointing at char e
+void pointer p = 0xffac9a68, pointing at int 1
+void pointer p = 0xffac9a6c, pointing at int 2
+void pointer p = 0xffac9a70, pointing at int 3
+void pointer p = 0xffac9a74, pointing at int 4
+void pointer p = 0xffac9a78, pointing at int 5
+pparmar2@g7-20:/import/linux/home1/pparmar2/git-repos/i220b/work/lab5/files/ex5$ exit
+
+Script done on 2019-09-20 15:37:20-04:00 [COMMAND_EXIT_CODE="0"]
