@@ -1,0 +1,20 @@
+::Exercise 3::
+
+Change of x and y is caused because of the call to f(); Without the call to the function f(), the output of x and y would be x = 0x8ba, y = 0xf54..
+
+::Exercise 6::
+
+STATIC:
+main - 0000000000401bf6 T main
+addvec - 0000000000401f1f T addvec
+multvec - 0000000000401f8e T multvec
+
+DYNAMIC:
+main - 00000000000011ee T main
+addvec-                U addvec
+multvec-              U multvec
+
+Using GDB and set env LD_LIBRARY_PATH:
+addvec - 0x7ffff7fca0f5 <addvec>
+multvec - 0x7ffff7fca164 <multvec>
+

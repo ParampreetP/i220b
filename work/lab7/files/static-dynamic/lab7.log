@@ -1,0 +1,26 @@
+Script started on 2019-10-03 17:20:54-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="113" LINES="19"]
+pparmar2@g7-02:/import/linux/home1/pparmar2/git-repos/i220b/work/lab7/files/static-dynamic$ make
+cc -g -Wall  -std=c11   -c -o log10.o log10.c
+cc -static log10.o -lm -o log10-static
+cc log10.o -lm -o log10-dynamic
+pparmar2@g7-02:/import/linux/home1/pparmar2/git-repos/i220b/work/lab7/files/static-dynamic$ las -[K[K[K[Ks -l
+total 940
+-rw-r--r-- 1 pparmar2 pparmar2      0 Oct  3 17:20 lab7.log
+-rw-r--r-- 1 pparmar2 pparmar2    185 Oct  3 16:35 log10.c
+-rwxr-xr-x 1 pparmar2 pparmar2  19272 Oct  3 17:20 log10-dynamic
+-rw-r--r-- 1 pparmar2 pparmar2   6072 Oct  3 17:20 log10.o
+-rwxr-xr-x 1 pparmar2 pparmar2 924904 Oct  3 17:20 log10-static
+-rw-r--r-- 1 pparmar2 pparmar2    250 Oct  3 16:35 Makefile
+pparmar2@g7-02:/import/linux/home1/pparmar2/git-repos/i220b/work/lab7/files/static-dynamic$ ls -1
+lab7.log
+log10.c
+log10-dynamic
+log10.o
+log10-static
+Makefile
+pparmar2@g7-02:/import/linux/home1/pparmar2/git-repos/i220b/work/lab7/files/static-dynamic$ nm log10-static > log 10.static.nm
+pparmar2@g7-02:/import/linux/home1/pparmar2/git-repos/i220b/work/lab7/files/static-dynamic$ nm log10-static > log10.static.nm[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[Kd`[Kynamic > lo g10-dynamic [K.nm
+pparmar2@g7-02:/import/linux/home1/pparmar2/git-repos/i220b/work/lab7/files/static-dynamic$ ^C
+
+Script done on 2019-10-03 17:22:54-04:00 [COMMAND_EXIT_CODE="130"]
