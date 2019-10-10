@@ -1,0 +1,269 @@
+::EXERCISE 1::
+
+Input: git remote -v
+output: origin	ssh://pparmar2@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git (fetch)
+	origin	ssh://pparmar2@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git (push)
+input: ls -a
+output: .  ..  .git
+
+input: git status
+output: On branch master
+	No commits yet
+	Untracked files:
+  		(use "git add <file>..." to include in what will be committed)
+
+		../
+	nothing added to commit but untracked files present (use "git add" to track)
+input: git status --short
+output: A  README.md
+
+input: git commit -m 'added README'
+output: [master (root-commit) 2a44dfb] added README
+ 	1 file changed, 4 insertions(+)
+ 	create mode 100644 work/lab8/README.md
+
+input: git branch -l
+output: * master
+
+input: git push
+output: Enumerating objects: 5, done.
+	Counting objects: 100% (5/5), done.
+	Writing objects: 100% (5/5), 339 bytes | 169.00 KiB/s, done.
+	Total 5 (delta 0), reused 0 (delta 0)
+	To ssh://remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git
+ 	* [new branch]      master -> master
+
+input: git status
+output: On branch master
+	Your branch is up to date with 'origin/master'.
+	nothing to commit, working tree clean
+
+
+
+
+
+
+
+
+
+::EXERCISE 2::
+
+input: $ git status -s
+output: ?? Makefile
+	?? hello
+	?? hello.c
+
+input: git status -s
+output:	?? .gitignore
+	?? Makefile
+	?? hello.c
+
+input: git status -s
+output: A  .gitignore
+	A  Makefile
+	A  hello.c
+
+input: git commit -m "working with warnings"
+output: [master cff9bc8] working with warnings
+ 	3 files changed, 22 insertions(+)
+ 	create mode 100644 work/lab8/.gitignore
+ 	create mode 100644 work/lab8/Makefile
+ 	create mode 100644 work/lab8/hello.c
+
+input: git status -s
+output: M hello.c
+
+input: git add .
+output: (no output)
+
+input: git status -s
+output: M  hello.c
+
+input: git commit -a -m "working: clean compile"
+output:[master 236d77c] working: clean compile
+ 	1 file changed, 2 insertions(+)
+
+input: git push
+output: pparmar2@remote.cs.binghamton.edu's password: 
+	Enumerating objects: 15, done.
+	Counting objects: 100% (15/15), done.
+	Delta compression using up to 8 threads
+	Compressing objects: 100% (7/7), done.
+	Writing objects: 100% (12/12), 998 bytes | 332.00 KiB/s, done.
+	Total 12 (delta 2), reused 0 (delta 0)
+	To ssh://remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git
+   	2a44dfb..236d77c  master -> master
+
+input: git log hello.c
+output: commit 236d77c76acaf2ec74f814eb54a7c2e10734d5f1 (HEAD -> master, origin/master)
+	Author: Parampreet Parmar <Pparmar2@binghamton.edu>
+	Date:   Thu Oct 10 17:04:14 2019 -0400
+
+   	 working: clean compile
+
+	commit cff9bc854f13bb97fb5a35ecd33058565f9d02e4
+	Author: Parampreet Parmar <Pparmar2@binghamton.edu>
+	Date:   Thu Oct 10 17:00:41 2019 -0400
+
+    	working with warnings
+
+input: git log -1 hello.c
+output: commit 236d77c76acaf2ec74f814eb54a7c2e10734d5f1 (HEAD -> master, origin/master)
+	Author: Parampreet Parmar <Pparmar2@binghamton.edu>
+	Date:   Thu Oct 10 17:04:14 2019 -0400
+
+    	working: clean compile
+
+input: git diff
+output: diff --git a/work/lab8/hello.c b/work/lab8/hello.c
+	index 85c5f16..e1299de 100644
+	--- a/work/lab8/hello.c
+	+++ b/work/lab8/hello.c
+	@@ -4,7 +4,7 @@ int
+ 	main(int argc, const char *argv[])
+ 	{
+ 	  if (argc != 2) {
+	-    printf("usage: %s NAME\n", argv[0]);
+	+    fprintf("usage: %s NAME\n", argv[0]);
+	     exit(1);
+	   }
+	   printf("hello %s\n", argv[1]);
+
+input: git commit -a -m "send usage message to stderr"
+output: [master 59e8479] send usage message to stderr
+ 	1 file changed, 1 insertion(+), 1 deletion(-)
+
+input:  git push
+output: pparmar2@remote.cs.binghamton.edu's password: 
+	Enumerating objects: 9, done.
+	Counting objects: 100% (9/9), done.
+	Delta compression using up to 8 threads
+	Compressing objects: 100% (3/3), done.
+	Writing objects: 100% (5/5), 378 bytes | 378.00 KiB/s, done.
+	Total 5 (delta 2), reused 0 (delta 0)
+	To ssh://remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git
+   	236d77c..59e8479  master -> master
+
+input: git shortlog
+output: Parampreet Parmar (4):
+      added README
+      working with warnings
+      working: clean compile
+      send usage message to stderr
+
+
+
+
+
+
+
+::EXERCISE3::
+
+input: git checkout -b hello-multi
+output: Switched to a new branch 'hello-multi'
+
+
+input: -a -m "allow greeting multiple names"
+output:  [hello-multi 3b2ce67] allow greeting multiple names
+ 	1 file changed, 6 insertions(+), 3 deletions(-)
+
+input: git push -u origin hello-multi
+output: Enumerating objects: 9, done.
+	Counting objects: 100% (9/9), done.
+	Delta compression using up to 8 threads
+	Compressing objects: 100% (3/3), done.
+	Writing objects: 100% (5/5), 523 bytes | 261.00 KiB/s, done.
+	Total 5 (delta 1), reused 0 (delta 0)
+	To ssh://remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git
+	 * [new branch]      hello-multi -> hello-multi
+	Branch 'hello-multi' set up to track remote branch 'hello-multi' from 'origin'.
+
+
+
+
+::EXERCISE 4::
+
+input: git checkout master
+output: Switched to branch 'master'
+	Your branch is up to date with 'origin/master'.
+
+
+
+input: git commit -a -m 'added return at end of main()'
+output: [master be11dd0] added return at end of main()
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+
+input: git push
+output: pparmar2@remote.cs.binghamton.edu's password: 
+	Enumerating objects: 9, done.
+	Counting objects: 100% (9/9), done.
+	Delta compression using up to 8 threads
+	Compressing objects: 100% (3/3), done.
+	Writing objects: 100% (5/5), 523 bytes | 523.00 KiB/s, done.
+	Total 5 (delta 1), reused 0 (delta 0)
+	To ssh://remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git
+   	59e8479..be11dd0  master -> master
+
+
+::EXERCISE 5::
+
+input: git checkout hello-multi
+output: Switched to branch 'hello-multi'
+	Your branch is up to date with 'origin/hello-multi'.
+
+input: git merge master
+output: Merge made by the 'recursive' strategy.
+
+
+input: git commit -a -m 'merged master'
+output: On branch hello-multi
+	Your branch is ahead of 'origin/hello-multi' by 2 commits.
+  	(use "git push" to publish your local commits)
+
+	nothing to commit, working tree clean
+input: git push
+	pparmar2@remote.cs.binghamton.edu's password: 
+	Enumerating objects: 1, done.
+	Counting objects: 100% (1/1), done.
+	Writing objects: 100% (1/1), 243 bytes | 243.00 KiB/s, done.
+	Total 1 (delta 0), reused 0 (delta 0)
+	To ssh://remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git
+   	3b2ce67..2e6671c  hello-multi -> hello-multi
+
+::EXERCISE 6::
+
+input: git checkout master
+output: Switched to branch 'master'
+	Your branch is up to date with 'origin/master'.
+input: git merge hello-multi
+output: Updating be11dd0..2e6671c
+	Fast-forward
+
+input: git branch -l
+output:  hello-multi
+	* master
+
+input: git shortlog hello.c
+output: Parampreet Parmar (4):
+      working with warnings
+      working: clean compile
+      send usage message to stderr
+      allow greeting multiple names
+
+input: git commit -a -m 'merged hello-multi'
+output: On branch master
+	Your branch is ahead of 'origin/master' by 2 commits.
+  	(use "git push" to publish your local commits)
+
+	nothing to commit, working tree clean
+input: git push
+output: pparmar2@remote.cs.binghamton.edu's password: 
+	Total 0 (delta 0), reused 0 (delta 0)
+	To ssh://remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git
+   	be11dd0..2e6671c  master -> master
+
+
+
+
+
+

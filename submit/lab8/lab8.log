@@ -1,0 +1,560 @@
+Script started on 2019-10-10 16:32:39-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+pparmar2@g7-10:/import/linux/home1/pparmar2/git-repos/i220b/work/lab8$ cd ~/git- reps[Kos
+pparmar2@g7-10:~/git-repos$ mkdir lab8.git
+pparmar2@g7-10:~/git-repos$ cd lab8.git
+pparmar2@g7-10:~/git-repos/lab8.git$ c[Kgit init --bare
+Initialized empty Git repository in /import/linux/home1/pparmar2/git-repos/lab8.git/
+pparmar2@g7-10:~/git-repos/lab8.git$ mdi[K[Kkdir -p ~/tm[[Kp
+pparmar2@g7-10:~/git-repos/lab8.git$ cd ~/tmp
+pparmar2@g7-10:~/tmp$ git clone \
+>   ssh://LOGIN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git
+Cloning into 'lab8'...
+Warning: Permanently added the ECDSA host key for IP address '128.226.114.203' to the list of known hosts.
+LOGIN@remote.cs.binghamton.edu's password: 
+Permission denied, please try again.
+LOGIN@remote.cs.binghamton.edu's password: 
+Permission denied, please try again.
+LOGIN@remote.cs.binghamton.edu's password: 
+LOGIN@remote.cs.binghamton.edu: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+pparmar2@g7-10:~/tmp$ git clone   ssh://LOGIN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git
+Cloning into 'lab8'...
+Warning: Permanently added the ECDSA host key for IP address '128.226.114.200' to the list of known hosts.
+LOGIN@remote.cs.binghamton.edu's password: 
+Permission denied, please try again.
+LOGIN@remote.cs.binghamton.edu's password: 
+Permission denied, please try again.
+LOGIN@remote.cs.binghamton.edu's password: 
+LOGIN@remote.cs.binghamton.edu: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+pparmar2@g7-10:~/tmp$ git clone   ssh://LOGIN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cssh://LOGIN@remote.cs.binghamton.edu/home/LOGIN/[1Pgit-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[Cssh://LOGIN@remote.cs.binghamton.edu/home/LOGIN/g[1Pit-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+Cloning into 'lab8'...
+LOGIN@remote.cs.binghamton.edu's password: 
+Permission denied, please try again.
+LOGIN@remote.cs.binghamton.edu's password: 
+Permission denied, please try again.
+LOGIN@remote.cs.binghamton.edu's password: 
+LOGIN@remote.cs.binghamton.edu: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+pparmar2@g7-10:~/tmp$ git clone ssh://LOGIN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git
+Cloning into 'lab8'...
+LOGIN@remote.cs.binghamton.edu's password: 
+Permission denied, please try again.
+LOGIN@remote.cs.binghamton.edu's password: 
+
+pparmar2@g7-10:~/tmp$ git clone ssh://LOGIN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CN@remote.cs.binghamton.edu/home/LOGIN/gi[1Pt-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CN@remote.cs.binghamton.edu/home/LOGIN/git[1P-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CN@remote.cs.binghamton.edu/home/LOGIN/git-[1Prepos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CN@remote.cs.binghamton.edu/home/LOGIN/git-r[1Pepos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CpN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CpN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CaN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CrN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CmN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CaN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CrN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2N@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/home/LOGI[1PN/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+Cloning into 'lab8'...
+pparmar2@remote.cs.binghamton.edu's password: 
+fatal: '/home/LOGIN/git-repos/lab8.git' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+pparmar2@g7-10:~/tmp$ git clone ssh://pparmar2@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[1PN/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CN/[1Pgit-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CN/g[1Pit-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CN/gi[1Pt-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CpN/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CpN/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CaN/git-repos/lab8.gitrN/git-repos/lab8.git[CmN/git-repos/lab8.git[C[CaN/git-repos/lab8.git[C[C[CrN/git-repos/lab8.git[C[C[C[C2N/git-repos/lab8.git[C[C[C[C[C[1P/git-repos/lab8.git[C[C[C[C[C
+Cloning into 'lab8'...
+pparmar2@remote.cs.binghamton.edu's password: 
+warning: You appear to have cloned an empty repository.
+pparmar2@g7-10:~/tmp$ cd lab8
+pparmar2@g7-10:~/tmp/lab8$ git remote -v
+origin	ssh://pparmar2@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git (fetch)
+origin	ssh://pparmar2@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git (push)
+pparmar2@g7-10:~/tmp/lab8$ ls -a
+.  ..  .git
+pparmar2@g7-10:~/tmp/lab8$ ,[Kmkdir -p work/lab8
+pparmar2@g7-10:~/tmp/lab8$ cd work/a[Klab8
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ cp [K[K[Kcp ~/cs220/labs/lab8/files/README.md .
+cp: cannot stat '/home/pparmar2/cs220/labs/lab8/files/README.md': No such file or directory
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/README.md .[K
+cp: missing destination file operand after '/home/pparmar2/cs220/labs/lab8/files/README.md'
+Try 'cp --help' for more information.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/README.md .
+cp: cannot stat '/home/pparmar2/cs220/labs/lab8/files/README.md': No such file or directory
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/README.md .
+cp: cannot stat '/home/pparmar2/cs220/labs/lab8/files/README.md': No such file or directory
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git statuscp ~/cs220/labs/lab8/files/README.md .
+cp: cannot stat '/home/pparmar2/cs220/labs/lab8/files/README.md': No such file or directory
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/README.md .[1@g[1@i[1@t[1@-rcs220/labs/lab8/files/README.md . [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecs220/labs/lab8/files/README.md .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpcs220/labs/lab8/files/README.md .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cocs220/labs/lab8/files/README.md .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscs220/labs/lab8/files/README.md .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/labs/lab8/files/README.[1@m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git statsus[K[K[Kus
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m../[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git add README.md [K
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git status --short [K
+[32mA[m  README.md
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git commit -m 'added re[K[KREADME'
+[master (root-commit) 2a44dfb] added README
+ 1 file changed, 4 insertions(+)
+ create mode 100644 work/lab8/README.md
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ parampreetp[K[K[K[K[K[K[K[K[K[K[Kgit branch -l
+[?1h=* [32mmaster[m[m
+[K[?1l>pparmar2@g7-10:~/tmp/lab8/work/lab8$ git p[Kpush
+pparmar2@remote.cs.binghamton.edu's password: 
+Permission denied, please try again.
+pparmar2@remote.cs.binghamton.edu's password: 
+Permission denied, please try again.
+pparmar2@remote.cs.binghamton.edu's password: 
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 339 bytes | 169.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git
+ * [new branch]      master -> master
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git status -s
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ i[Kgit status -s
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ gt[Kiot[K[Kt push --set[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit psh[K[Kush --set
+pparmar2@remote.cs.binghamton.edu's password: 
+Permission denied, please try again.
+pparmar2@remote.cs.binghamton.edu's password: 
+Permission denied, please try again.
+pparmar2@remote.cs.binghamton.edu's password: 
+pparmar2@remote.cs.binghamton.edu: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git push --set[K[K[K[K[K[K[K[K[K[K[K[K[K[KGIT [K[K[K[Kgits[K status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ^C
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ GIT [K[K[K[Kgit s[Kpsush[K[K[K[Kuish[K[K[Ksh --set
+pparmar2@remote.cs.binghamton.edu's password: 
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Everything up-to-date
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git status -s
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/Makefile .
+cp: cannot stat '/home/pparmar2/cs220/labs/lab8/files/Makefile': No such file or directory
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/Makefile .[1@g[1@i[1@t[1@-[1@recs220/labs/lab8/files/Makefile . [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpcs220/labs/lab8/files/Makefile .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cocs220/labs/lab8/files/Makefile .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscs220/labs/lab8/files/Makefile .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-cs220/labs/lab8/files/Makefile .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccs220/labs/lab8/files/Makefile[1P .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/labs/lab8/files/Makefile .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ls
+Makefile  README.md
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ls[Kcp ~/cs220/labs/lab8/files/hello-one.c hello.c
+cp: cannot stat '/home/pparmar2/cs220/labs/lab8/files/hello-one.c': No such file or directory
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/hello-one.c hello.c
+cp: cannot stat '/home/pparmar2/cs220/labs/lab8/files/hello-one.c': No such file or directory
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/hello-one.c hello.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcs220/labs/lab8/files/hello-one.c hello.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cics220/labs/lab8/files/hello-one.c hello.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctcs220/labs/lab8/files/hello-one.c he[Clo.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-cs220/labs/lab8/files/hello-one.c hello.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crcs220/labs/lab8/files/hello-one.c hello.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecs220/labs/lab8/files/hello-one.c hello.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpcs220/labs/lab8/files/hello-one.c hello.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cocs220/labs/lab8/files/hello-one[1@.[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscs220/labs/lab8/files/hello-on[1@e[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/labs/lab8/files/hello-o[1@n[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ls
+hello.c  Makefile  README.md
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+[01m[Khello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khello.c:5:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kprintf[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+     [01;35m[Kprintf[m[K("usage: %s NAME\n", argv[0]);
+     [01;35m[K^~~~~~[m[K
+[01m[Khello.c:5:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+[01m[Khello.c:5:5:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kprintf[m[K’
+[01m[Khello.c:1:1:[m[K
++[32m[K#include <stdio.h>[m[K
+ int
+[01m[Khello.c:5:5:[m[K
+     [01;36m[Kprintf[m[K("usage: %s NAME\n", argv[0]);
+     [01;36m[K^~~~~~[m[K
+[01m[Khello.c:6:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kexit[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+     [01;35m[Kexit[m[K(1);
+     [01;35m[K^~~~[m[K
+[01m[Khello.c:6:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’
+[01m[Khello.c:6:5:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdlib.h>[m[K’ or provide a declaration of ‘[01m[Kexit[m[K’
+[01m[Khello.c:1:1:[m[K
++[32m[K#include <stdlib.h>[m[K
+ int
+[01m[Khello.c:6:5:[m[K
+     [01;36m[Kexit[m[K(1);
+     [01;36m[K^~~~[m[K
+[01m[Khello.c:8:3:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+   [01;35m[Kprintf[m[K("hello %s\n", argv[1]);
+   [01;35m[K^~~~~~[m[K
+[01m[Khello.c:8:3:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kprintf[m[K’
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ./hello john
+hello john
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git status -s
+[31m??[m Makefile
+[31m??[m hello
+[31m??[m hello.c
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/.gitignore .[C[1@g[1@i[1@t-cs220/labs/lab8/files/.gitignore . [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecs220/labs/lab8/files/.gitignore .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crcs220/labs/lab8/files/.gitignore .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccs220/labs/lab8/files/.gitignore .[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccs220/labs/lab8/files/.gitignore . [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crcs220/labs/lab8/files/.gitignore .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecs220/labs/lab8/files/.gitignore .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpcs220/labs/lab8/files/.gitignore .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cocs220/labs/lab8/files/.gitignore .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscs220/labs/lab8/files/.gitigno[1@r[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C?cs220/labs/lab8/files/.gitign[1@o[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccs220/labs/lab8/files/.gitigno[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/labs/lab8/files/.gitign[1@o[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ls
+hello  hello.c	Makefile  README.md
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git stats[Kus -s
+[31m??[m .gitignore
+[31m??[m Makefile
+[31m??[m hello.c
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git add .
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git stadd .status -s
+[32mA[m  .gitignore
+[32mA[m  Makefile
+[32mA[m  hello.c
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git commit -m "working with warnings'[K"
+[master cff9bc8] working with warnings
+ 3 files changed, 22 insertions(+)
+ create mode 100644 work/lab8/.gitignore
+ create mode 100644 work/lab8/Makefile
+ create mode 100644 work/lab8/hello.c
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ touch[K[K[K[K[Kgedit hello.c 
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ./hello john
+hello john
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git status -s
+ [31mM[m hello.c
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ got add[K[K[K[K[K[Kit add -[K.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ giut st[K[K[K[K[K[Kit status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   hello.c[m
+
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git status -s
+[32mM[m  hello.c
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ^C
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git cm[Kommit -a -m "working: clean cnm[K[Kompile"
+[master 236d77c] working: clean compile
+ 1 file changed, 2 insertions(+)
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ gi [Kt push
+pparmar2@remote.cs.binghamton.edu's password: 
+Enumerating objects: 15, done.
+Counting objects:   6% (1/15)   Counting objects:  13% (2/15)   Counting objects:  20% (3/15)   Counting objects:  26% (4/15)   Counting objects:  33% (5/15)   Counting objects:  40% (6/15)   Counting objects:  46% (7/15)   Counting objects:  53% (8/15)   Counting objects:  60% (9/15)   Counting objects:  66% (10/15)   Counting objects:  73% (11/15)   Counting objects:  80% (12/15)   Counting objects:  86% (13/15)   Counting objects:  93% (14/15)   Counting objects: 100% (15/15)   Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects:  14% (1/7)   Compressing objects:  28% (2/7)   Compressing objects:  42% (3/7)   Compressing objects:  57% (4/7)   Compressing objects:  71% (5/7)   Compressing objects:  85% (6/7)   Compressing objects: 100% (7/7)   Compressing objects: 100% (7/7), done.
+Writing objects:   8% (1/12)   Writing objects:  16% (2/12)   Writing objects:  25% (3/12)   Writing objects:  33% (4/12)   Writing objects:  41% (5/12)   Writing objects:  50% (6/12)   Writing objects:  58% (7/12)   Writing objects:  66% (8/12)   Writing objects:  75% (9/12)   Writing objects:  83% (10/12)   Writing objects:  91% (11/12)   Writing objects: 100% (12/12)   Writing objects: 100% (12/12), 998 bytes | 332.00 KiB/s, done.
+Total 12 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git
+   2a44dfb..236d77c  master -> master
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git log.[K hello.c
+[?1h=[33mcommit 236d77c76acaf2ec74f814eb54a7c2e10734d5f1[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m[m
+Author: Parampreet Parmar <Pparmar2@binghamton.edu>[m
+Date:   Thu Oct 10 17:04:14 2019 -0400[m
+[m
+    working: clean compile[m
+[m
+[33mcommit cff9bc854f13bb97fb5a35ecd33058565f9d02e4[m[m
+Author: Parampreet Parmar <Pparmar2@binghamton.edu>[m
+Date:   Thu Oct 10 17:00:41 2019 -0400[m
+[m
+    working with warnings[m
+[K[?1l>pparmar2@g7-10:~/tmp/lab8/work/lab8$ git log -1 hello,c[K[K.c
+[?1h=[33mcommit 236d77c76acaf2ec74f814eb54a7c2e10734d5f1[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m[m
+Author: Parampreet Parmar <Pparmar2@binghamton.edu>[m
+Date:   Thu Oct 10 17:04:14 2019 -0400[m
+[m
+    working: clean compile[m
+[K[?1l>pparmar2@g7-10:~/tmp/lab8/work/lab8$ make
+make: Nothing to be done for 'all'.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ./hello 
+usage: ./hello NAME
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ./hello name
+hello name
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ hello[K[K[K[K[K./hello d[K>/dev/null
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ./hello name[K[K[K[KNAME
+hello NAME
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ GIT[K[K[Kgit diff
+[?1h=[K[?1l>pparmar2@g7-10:~/tmp/lab8/work/lab8$ git diff
+[?1h=[K[?1l>pparmar2@g7-10:~/tmp/lab8/work/lab8$ ls
+hello  hello.c	Makefile  README.md
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ gedit je[K[Khello.c
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git commt[Kit -a -m 
+error: switch `m' requires a value
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git commit -a -m "send usageme[K[K message to std err
+> ^C
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git commit -a -m "send usage message to stderr"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ getit[K[K[K[Kettit[Kt[K[K[Kit[K[K[Kdit helloc[K.c
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ gedit hello.cit commit -a -m "send usage message to stderr"[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pedit hello.cls[Kgit diff
+[?1h=[1mdiff --git a/work/lab8/hello.c b/work/lab8/hello.c[m[m
+[1mindex 85c5f16..e1299de 100644[m[m
+[1m--- a/work/lab8/hello.c[m[m
+[1m+++ b/work/lab8/hello.c[m[m
+[36m@@ -4,7 +4,7 @@[m [mint[m[m
+ main(int argc, const char *argv[])[m[m
+ {[m[m
+   if (argc != 2) {[m[m
+[31m-    printf("usage: %s NAME\n", argv[0]);[m[m
+[32m+[m[32m    fprintf("usage: %s NAME\n", argv[0]);[m[m
+     exit(1);[m[m
+   }[m[m
+   printf("hello %s\n", argv[1]);[m[m
+[K[?1l>pparmar2@g7-10:~/tmp/lab8/work/lab8$ git diffedit hello.cit commit -a -m "send usage message to stderr"
+[master 59e8479] send usage message to stderr
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git push
+pparmar2@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 378 bytes | 378.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git
+   236d77c..59e8479  master -> master
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git shortlog
+[?1h=Parampreet Parmar (4):[m
+      added README[m
+      working with warnings[m
+      working: clean compile[m
+      send usage message to stderr[m
+[m
+[K[?1l>pparmar2@g7-10:~/tmp/lab8/work/lab8$ GIT [K[K[K[Kgt[Kitch[K[K checkout -b hello-mui[Klti
+Switched to a new branch 'hello-multi'
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/hello-multi.c hello.c
+cp: cannot stat '/home/pparmar2/cs220/labs/lab8/files/hello-multi.c': No such file or directory
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/hello-multi.c hello.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/labs/lab8/files/hello-multi.c he[Clo.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccs220/labs/lab8/files/hello-multi.c hel[C[1Po.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcs220/labs/lab8/files/hello-multi.c he[Clo.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cics220/labs/lab8/files/hello-multi.c hello.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctcs220/labs/lab8/files/hello-multi.c hello.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpcs220/labs/lab8/files/hello-multi.c hello.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccs220/labs/lab8/files/hello-multi.c [1Phello.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-cs220/labs/lab8/files/hello-multi.c hello.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crcs220/labs/lab8/files/hello-multi.c hello.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecs220/labs/lab8/files/hello-multi[1@.[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpcs220/labs/lab8/files/hello-mult[1@i[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cocs220/labs/lab8/files/hello-mul[1@t[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscs220/labs/lab8/files/hello-mu[1@l[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/labs/lab8/files/hello-m[1@u[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ./hello n[KN[Kjohn sue
+hello john
+hello sue
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git commit -a -m 
+error: switch `m' requires a value
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git commit -a -m "allow greeting multiple n ames"
+[hello-multi 3b2ce67] allow greeting multiple names
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git push 0[K-u
+fatal: The current branch hello-multi has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin hello-multi
+
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git push
+fatal: The current branch hello-multi has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin hello-multi
+
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git push 0[K-u
+fatal: The current branch hello-multi has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin hello-multi
+
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git push -uor[K[K orgibn hello-[K[K[K[K[K[K[K[K[Kn hello-multi
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git push -u orgin hello-multi[C[1@s[1P[1@-[1@s[1@e[1@t[1P
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git push --set orgin hello-multi[1P[1P[1P[1@u
+error: unknown option `u'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --recurse-submodules[=(check|on-demand|no)]
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git push --u orgin hello-multi[1P
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git push -u orgin hello-multi[C[1@i
+pparmar2@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 523 bytes | 261.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git
+ * [new branch]      hello-multi -> hello-multi
+Branch 'hello-multi' set up to track remote branch 'hello-multi' from 'origin'.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ GIT CH[K[K[K[K[K[Kgit checkput[K[K[Kout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+[01m[Khello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khello.c:7:13:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kfprintf[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+     fprintf([01;35m[K"usage: %s NAME\n"[m[K, argv[0]);
+             [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[Khello.c:1[m[K:
+[01m[K/usr/include/stdio.h:326:38:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[KFILE * restrict[m[K’ {aka ‘[01m[Kstruct _IO_FILE * restrict[m[K’} but argument is of type ‘[01m[Kchar *[m[K’
+ extern int fprintf ([01;36m[KFILE *__restrict __stream[m[K,
+                     [01;36m[K~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ./hello jon[Khn sue
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ gedit hello.c
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ tail -3 e[Khge[K[Kelloe[Kc[K.c 
+  printf("hello %s\n", argv[1]);
+  return 0;
+}
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+[01m[Khello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khello.c:7:13:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kfprintf[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+     fprintf([01;35m[K"usage: %s NAME\n"[m[K, argv[0]);
+             [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[Khello.c:1[m[K:
+[01m[K/usr/include/stdio.h:326:38:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[KFILE * restrict[m[K’ {aka ‘[01m[Kstruct _IO_FILE * restrict[m[K’} but argument is of type ‘[01m[Kchar *[m[K’
+ extern int fprintf ([01;36m[KFILE *__restrict __stream[m[K,
+                     [01;36m[K~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ./hello sue name
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ make
+make: Nothing to be done for 'all'.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ make./hello sue name
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ gedit hello.c
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ make
+make: Nothing to be done for 'all'.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ./hello 
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ./hello [4Pmakegedit hello.c
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ./hello sue name
+hello sue
+hello name
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git commit -a -m 'added return at end of ma in();[K
+> ^C
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git commit -a -m 'added return at end of main()'
+[master be11dd0] added return at end of main()
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git psh[K[Kush
+pparmar2@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 523 bytes | 523.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git
+   59e8479..be11dd0  master -> master
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ GIT CH[K[K[K[K[K[Kfi[K[Kgitch[K[K checku[Kout hello=[K-multi
+Switched to branch 'hello-multi'
+Your branch is up to date with 'origin/hello-multi'.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git merge master
+hint: Waiting for your editor to close the file... [?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"~/tmp/lab8/.git/MERGE_MSG" 7L, 266C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[38;5;130mMerge branch 'master' into hello-multi[m
+
+[34m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll]2;MERGE_MSG (~/tmp/lab8/.git) - VIM]1;MERGE_MSG[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[93mMerge branch 'master' into hello-multi[m
+
+[96m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll"~/tmp/lab8/.git/MERGE_MSG" 7L, 266C[1;1H[?25h[?25l[24;1HType  :qa!  and press <E...all changes and exit Vim[24;63H[K[24;63H1,1[11CAll[1;1H[?25h[?25l[24;63H[K[24;63H1,1[11CAll[1;1H[?25h[?25l[24;53Hq[1;1H[?25h[?25l[24;54Ha[1;1H[24;1H[1mrecording @a[m[24;13H[K[24;63H1,1[11CAll[1;1H[?25h[?25l[24;53Hq[1;1H[24;1H[K[1;1H[24;63H1,1[11CAll[1;1H[?25h[?25l[24;53Ha[1;1H[24;53H [1;2H[24;1H[1m-- INSERT --[m[24;63H[K[24;63H1,2[11CAll[1;2H[?25h[?25l[93mqerge branch 'master' into hello-multi[m[24;65H3]2;MERGE_MSG + (~/tmp/lab8/.git) - VIM]1;MERGE_MSG[1;3H[?25h[?25l[93maerge branch 'master' into hello-multi[m[24;65H4[1;4H[?25h[?25l[24;1H[K[24;63H1,3[11CAll[1;3H[?25h[?25l[24;1HType  :qa!  and press <E...all changes and exit Vim[24;63H[K[24;63H1,3[11CAll[1;3H[?25h[?25l[24;53H:[1;3H[24;1H[K[24;1H:[?2004h[?25hq[?25l[?25ha[?25l[?25h![?25l[?25h[?25l[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0t[KMerge made by the 'recursive' strategy.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git merge master
+Already up to date.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ gedit hello.c
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ make
+make: Nothing to be done for 'all'.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ./hello sue nae
+hello sue
+hello nae
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git commit -a -m 'merged master'
+On branch hello-multi
+Your branch is ahead of 'origin/hello-multi' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git push
+pparmar2@remote.cs.binghamton.edu's password: 
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1)   Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1)   Writing objects: 100% (1/1), 243 bytes | 243.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git
+   3b2ce67..2e6671c  hello-multi -> hello-multi
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git vche[K[K[K[Kcheckput[K[K[Kout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ gt[Kiot[K[Kt merge hello-multi
+Updating be11dd0..2e6671c
+Fast-forward
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ malke[K[Kk[K[Kke
+make: Nothing to be done for 'all'.
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ./hello u[Ksue jon[Khn
+hello sue
+hello john
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git branch -l
+[?1h=  hello-multi[m[m
+* [32mmaster[m[m
+[K[?1l>pparmar2@g7-10:~/tmp/lab8/work/lab8$ git shortlog helo[Klo.,c[K[Kc
+[?1h=Parampreet Parmar (4):[m
+      working with warnings[m
+      working: clean compile[m
+      send usage message to stderr[m
+      allow greeting multiple names[m
+[m
+[K[?1l>pparmar2@g7-10:~/tmp/lab8/work/lab8$ git commit -a -m 'merged hello-multi'
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+pparmar2@g7-10
