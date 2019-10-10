@@ -557,4 +557,167 @@ Your branch is ahead of 'origin/master' by 2 commits.
   (use "git push" to publish your local commits)
 
 nothing to commit, working tree clean
-pparmar2@g7-10
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ git push
+pparmar2@remote.cs.binghamton.edu's password: 
+Total 0 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git
+   be11dd0..2e6671c  master -> master
+pparmar2@g7-10:~/tmp/lab8/work/lab8$ ce [K[Kd ~/i220x[Kb
+pparmar2@g7-10:~/i220b$ ls
+README.md  submit  work
+pparmar2@g7-10:~/i220b$ git remote add lab8 \
+>   ssh://LOGIN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[1POGIN/git-repos/lab8.git[1PGIN/git-repos/lab8.git[1PIN/git-repos/lab8.git[1PN/git-repos/lab8.gitpN/git-repos/lab8.gitpN/git-repos/lab8.gitaN/git-repos/lab8.gitrN/git-repos/lab8.gitmN/git-repos/lab8.gitaN/git-repos/lab8.gitrN/git-repos/lab8.git2N/git-repos/lab8.git[1P/git-repos/lab8.git[1POGIN@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[1PGIN@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[1PIN@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[1PN@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[CpN@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[CpN@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[CaN@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[CrN@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[CmN@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CaN@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CrN@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2N@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/pparmar2/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+pparmar2@g7-10:~/i220b$ ls
+README.md  submit  work
+pparmar2@g7-10:~/i220b$ git pull
+Username for 'https://github.com': parampreetp
+Password for 'https://parampreetp@github.com': 
+Already up to date.
+pparmar2@g7-10:~/i220b$ cd work/lab8
+pparmar2@g7-10:~/i220b/work/lab8$ ls
+lab8.log  lab8_output.txt
+pparmar2@g7-10:~/i220b/work/lab8$ git log hello.c
+fatal: ambiguous argument 'hello.c': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+pparmar2@g7-10:~/i220b/work/lab8$ [Kpparmar2@g7-10:~/i220b/work/lab8$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m./[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+pparmar2@g7-10:~/i220b/work/lab8$ git add .
+pparmar2@g7-10:~/i220b/work/lab8$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   lab8.log[m
+	[32mnew file:   lab8_output.txt[m
+
+pparmar2@g7-10:~/i220b/work/lab8$ got[K[Kit status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   lab8.log[m
+	[32mnew file:   lab8_output.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mMakefile[m
+	[31mREADME.md[m
+	[31mhello[m
+	[31mhello.c[m
+
+pparmar2@g7-10:~/i220b/work/lab8$ git add .
+pparmar2@g7-10:~/i220b/work/lab8$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   Makefile[m
+	[32mnew file:   README.md[m
+	[32mnew file:   hello[m
+	[32mnew file:   hello.c[m
+	[32mnew file:   lab8.log[m
+	[32mnew file:   lab8_output.txt[m
+
+pparmar2@g7-10:~/i220b/work/lab8$ it[K[Kgit commit -am[K[Km "added files"
+[master 46285b3] added files
+ 6 files changed, 857 insertions(+)
+ create mode 100644 work/lab8/Makefile
+ create mode 100644 work/lab8/README.md
+ create mode 100755 work/lab8/hello
+ create mode 100644 work/lab8/hello.c
+ create mode 100644 work/lab8/lab8.log
+ create mode 100644 work/lab8/lab8_output.txt
+pparmar2@g7-10:~/i220b/work/lab8$ git push
+Username for 'https://github.com': parampreetp
+Password for 'https://parampreetp@github.com': 
+Enumerating objects: 12, done.
+Counting objects:   8% (1/12)   Counting objects:  16% (2/12)   Counting objects:  25% (3/12)   Counting objects:  33% (4/12)   Counting objects:  41% (5/12)   Counting objects:  50% (6/12)   Counting objects:  58% (7/12)   Counting objects:  66% (8/12)   Counting objects:  75% (9/12)   Counting objects:  83% (10/12)   Counting objects:  91% (11/12)   Counting objects: 100% (12/12)   Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects:  11% (1/9)   Compressing objects:  22% (2/9)   Compressing objects:  33% (3/9)   Compressing objects:  44% (4/9)   Compressing objects:  55% (5/9)   Compressing objects:  66% (6/9)   Compressing objects:  77% (7/9)   Compressing objects:  88% (8/9)   Compressing objects: 100% (9/9)   Compressing objects: 100% (9/9), done.
+Writing objects:  10% (1/10)   Writing objects:  20% (2/10)   Writing objects:  30% (3/10)   Writing objects:  40% (4/10)   Writing objects:  50% (5/10)   Writing objects:  60% (6/10)   Writing objects:  70% (7/10)   Writing objects:  80% (8/10)   Writing objects:  90% (9/10)   Writing objects: 100% (10/10)   Writing objects: 100% (10/10), 12.65 KiB | 1.81 MiB/s, done.
+Total 10 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/ParampreetP/i220b.git
+   97896cc..46285b3  master -> master
+pparmar2@g7-10:~/i220b/work/lab8$ git log hello,c[K[K.c
+[?1h=[33mcommit 46285b383736e9ca5112333bd64f8d4b08d2e4cf[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m,[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;31m[m[33m [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Parampreet Parmar <Pparmar2@binghamton.edu>[m
+Date:   Thu Oct 10 17:51:31 2019 -0400[m
+[m
+    added files[m
+[K[?1l>pparmar2@g7-10:~/i220b/work/lab8$ git pu[K[Kcomit[K[Kmit -m "added lab8, finishes"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+	[31m../../submit/lab8/[m
+
+nothing added to commit but untracked files present
+pparmar2@g7-10:~/i220b/work/lab8$ add[K[K[Kgit add.[K .
+pparmar2@g7-10:~/i220b/work/lab8$ git add .commit -m "added lab8, finishes"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+	[31m../../submit/lab8/[m
+
+nothing added to commit but untracked files present
+pparmar2@g7-10:~/i220b/work/lab8$ git add 0[K--all
+pparmar2@g7-10:~/i220b/work/lab8$ git add --allcommit -m "added lab8, finishes"
+[master 9346823] added lab8, finishes
+ 6 files changed, 857 insertions(+)
+ create mode 100644 submit/lab8/Makefile
+ create mode 100644 submit/lab8/README.md
+ create mode 100755 submit/lab8/hello
+ create mode 100644 submit/lab8/hello.c
+ create mode 100644 submit/lab8/lab8.log
+ create mode 100644 submit/lab8/lab8_output.txt
+pparmar2@g7-10:~/i220b/work/lab8$ git commit -m "added lab8, finishes"[K[Kd"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+pparmar2@g7-10:~/i220b/work/lab8$ git psh[K[Ks[Kush
+Username for 'https://github.com': parampreetp
+Password for 'https://parampreetp@github.com': 
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/ParampreetP/i220b.git
+   46285b3..9346823  master -> master
+pparmar2@g7-10:~/i220b/work/lab8$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   lab8.log[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+pparmar2@g7-10:~/i220b/work/lab8$ ^C
+pparmar2@g7-10:~/i220b/work/lab8$ exit
+
+Script done on 2019-10-10 17:52:57-04:00 [COMMAND_EXIT_CODE="130"]
