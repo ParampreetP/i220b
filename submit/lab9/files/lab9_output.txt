@@ -1,0 +1,9 @@
+A - ::EXERCISE 2::
+
+The mask is an integer because of -0x4(%rbp)
+
+B - ::EXERCISE 4::
+
+(gdb) p (char*) $rsi
+$1 = 0x7fffffffeacd "joe"
+
