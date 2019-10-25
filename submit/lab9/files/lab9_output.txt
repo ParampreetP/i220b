@@ -1,9 +1,14 @@
 A - ::EXERCISE 2::
 
-The mask is an integer because of -0x4(%rbp)
+The mystery function takes in a number and returns a different number. Masking is the process or operation to set bit on to off or off to on in a byte,nibble or word. Masking is implemented using AND. Examining the assembly file (objdump), I found 
+
+								and    $0x7fffff,%eax
+
 
 B - ::EXERCISE 4::
 
 (gdb) p (char*) $rsi
 $1 = 0x7fffffffeacd "joe"
+
+Typing in 'p who' also gives the same output..
 
