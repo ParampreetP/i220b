@@ -1,0 +1,212 @@
+Script started on 2019-10-24 16:29:44-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files$ cd ..
+bash: cd..: command not found
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files$ ls [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks
+cpuid1	cpuid2	lab10.log  lab10_output.txt  parity  rip  rotate  rsp
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files$ cd  cpuid1
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/cpuid1$ l;s[K[Ks
+cpuid.s  main.c  Makefile
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/cpuid1$ a[Kmake
+cc -g -Wall -std=c11 -Og   -c -o main.o main.c
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/cpuid1$ ./cpuid 
+cpuid: eax = 0xd; ebx = 0x756e6547; edx = 0x49656e69; ecx = 0x6c65746e
+vendor: GenuineIntel
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/cpuid1$ cd ..
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files$ ls [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks
+cpuid1	cpuid2	lab10.log  lab10_output.txt  parity  rip  rotate  rsp
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files$ cd  d[Kcpuid2
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/cpuid2$ l;s[K[Ks
+cpuid.s  main.c  Makefile
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/cpuid2$ make
+cc -g -Wall -std=c11    -c -o main.o main.c
+cc -c -g -Wall -std=c11  cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/cpuid2$ ./cpuid 1
+Segmentation fault
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/cpuid2$ ./cpuid 1[K0
+Segmentation fault
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/cpuid2$ ./cpuid 0[K
+usage: ./cpuid CPUID_OP
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/cpuid2$ ./cpuid da[K[Keax
+Segmentation fault
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/cpuid2$ ./cpuid eax[K[K[K%eax
+Segmentation fault
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/cpuid2$ cd ..
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files$ cd  parity/[K
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/parity$ ls
+main.c	Makefile  parity.s
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/parity$ maek[K[Kkle[K[Ke
+cc -g -Wall -std=c11 -Og   -c -o main.o main.c
+cc -c -g -Wall -std=c11 -Og parity.s -o parity.o
+cc main.o parity.o -o parity
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/parity$ ./parity 
+usage: ./parity INT1...
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/parity$ ./parity eax
+parity(0) = 0
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/parity$ ./parity eax[K[K[K1 2 3 5 6 7 15 21
+parity(1) = 1
+parity(2) = 2
+parity(3) = 3
+parity(5) = 5
+parity(6) = 6
+parity(7) = 7
+parity(15) = 15
+parity(21) = 21
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/parity$ ./parity 1 2 3 5 6 7 15 21[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K1[K-1 1 0 -2
+parity(-1) = -1
+parity(1) = 1
+parity(0) = 0
+parity(-2) = -2
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/parity$ make
+cc -c -g -Wall -std=c11 -Og parity.s -o parity.o
+parity.s: Assembler messages:
+parity.s:7: Error: too many memory references for `mov'
+parity.s:8: Error: too many memory references for `add'
+parity.s:10: Error: too many memory references for `mov'
+make: *** [Makefile:9: parity.o] Error 1
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/parity$ make
+cc -c -g -Wall -std=c11 -Og parity.s -o parity.o
+parity.s: Assembler messages:
+parity.s:7: Error: too many memory references for `mov'
+parity.s:8: Error: too many memory references for `shr'
+parity.s:9: Error: too many memory references for `xor'
+parity.s:10: Error: too many memory references for `xor'
+make: *** [Makefile:9: parity.o] Error 1
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/parity$ cle[K[K[Ka[Kmake clean
+rm -f *.o parity
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/parity$ make
+cc -g -Wall -std=c11 -Og   -c -o main.o main.c
+cc -c -g -Wall -std=c11 -Og parity.s -o parity.o
+parity.s: Assembler messages:
+parity.s:7: Error: too many memory references for `mov'
+parity.s:8: Error: too many memory references for `shr'
+parity.s:9: Error: too many memory references for `xor'
+parity.s:10: Error: too many memory references for `xor'
+make: *** [Makefile:9: parity.o] Error 1
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/parity$ ./[K[Kmake
+cc -c -g -Wall -std=c11 -Og parity.s -o parity.o
+parity.s: Assembler messages:
+parity.s:8: Error: operand type mismatch for `ror'
+parity.s:9: Error: too many memory references for `xor'
+parity.s:10: Error: too many memory references for `xor'
+make: *** [Makefile:9: parity.o] Error 1
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/parity$ ame[K[K[Kmake clean
+rm -f *.o parity
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/parity$ make
+cc -g -Wall -std=c11 -Og   -c -o main.o main.c
+cc -c -g -Wall -std=c11 -Og parity.s -o parity.o
+parity.s: Assembler messages:
+parity.s:8: Error: operand type mismatch for `rol'
+parity.s:9: Error: too many memory references for `xor'
+parity.s:10: Error: too many memory references for `xor'
+make: *** [Makefile:9: parity.o] Error 1
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/parity$ make
+cc -c -g -Wall -std=c11 -Og parity.s -o parity.o
+parity.s: Assembler messages:
+parity.s:8: Error: operand type mismatch for `rol'
+parity.s:9: Error: too many memory references for `xor'
+parity.s:10: Error: too many memory references for `xor'
+make: *** [Makefile:9: parity.o] Error 1
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/parity$ MAKE C[K[K[K[K[K[Kmae [K[Kke clean
+rm -f *.o parity
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/parity$ cd ..
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files$ ls [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks
+cpuid1	cpuid2	lab10.log  lab10_output.txt  parity  rip  rotate  rsp
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files$ cd rdao [K[K[K[Kip
+bash: cdrip: command not found
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files$ cd  rip
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/rip$ ls
+Makefile  rip.c
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/rip$ make
+cc -Wall -Og -std=c11 -S rip.c
+cc -Wall -Og -std=c11    rip.c   -o rip
+objdump -d rip > rip.dump
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/rip$ ./rip 
+&get_rip() = 0x55e10cea8135; rip = 0x55e10cea813c
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/rip$ cd ..
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files$ cd  ri[Ksp
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/rsp$ mk[Kake
+cc -Wall -Og -std=c11 -S rsp.c
+[01m[Krsp.c:[m[K In function ‘[01m[Kget_rsp[m[K’:
+[01m[Krsp.c:9:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Krsp[m[K’ is used uninitialized in this function [[01;35m[K-Wuninitialized[m[K]
+   return [01;35m[Krsp[m[K;
+          [01;35m[K^~~[m[K
+cc -Wall -Og -std=c11    rsp.c   -o rsp
+[01m[Krsp.c:[m[K In function ‘[01m[Kget_rsp[m[K’:
+[01m[Krsp.c:9:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Krsp[m[K’ is used uninitialized in this function [[01;35m[K-Wuninitialized[m[K]
+   return [01;35m[Krsp[m[K;
+          [01;35m[K^~~[m[K
+objdump -d rsp > rsp.dump
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/rsp$ make
+cc -Wall -Og -std=c11 -S rsp.c
+[01m[Krsp.c:5:1:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[Kinline[m[K’
+ [01;31m[Kinline[m[K get_rsp(void)
+ [01;31m[K^~~~~~[m[K
+[01m[Krsp.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Krsp.c:14:47:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kget_rsp[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+   printf("&stkVar = %p; rsp = %p\n", &stkVar, [01;35m[Kget_rsp[m[K());
+                                               [01;35m[K^~~~~~~[m[K
+[01m[Krsp.c:14:32:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid *[m[K’, but argument 3 has type ‘[01m[Kint[m[K’ [[01;35m[K-Wformat=[m[K]
+   printf("&stkVar = %p; rsp = [01;35m[K%p[m[K\n", &stkVar, [32m[Kget_rsp()[m[K);
+                               [01;35m[K~^[m[K              [32m[K~~~~~~~~~[m[K
+                               [32m[K%d[m[K
+make: *** [Makefile:15: rsp.s] Error 1
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/rsp$ make cl;ea[K[K[Kean
+rm -f *~ *.o rsp.s rsp rsp.dump
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/rsp$ make
+cc -Wall -Og -std=c11 -S rsp.c
+[01m[Krsp.c:5:1:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[Kinline[m[K’
+ [01;31m[Kinline[m[K get_rsp(void)
+ [01;31m[K^~~~~~[m[K
+[01m[Krsp.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Krsp.c:14:47:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kget_rsp[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+   printf("&stkVar = %p; rsp = %p\n", &stkVar, [01;35m[Kget_rsp[m[K());
+                                               [01;35m[K^~~~~~~[m[K
+[01m[Krsp.c:14:32:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid *[m[K’, but argument 3 has type ‘[01m[Kint[m[K’ [[01;35m[K-Wformat=[m[K]
+   printf("&stkVar = %p; rsp = [01;35m[K%p[m[K\n", &stkVar, [32m[Kget_rsp()[m[K);
+                               [01;35m[K~^[m[K              [32m[K~~~~~~~~~[m[K
+                               [32m[K%d[m[K
+make: *** [Makefile:15: rsp.s] Error 1
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/rsp$ make
+cc -Wall -Og -std=c11 -S rsp.c
+[01m[Krsp.c:[m[K In function ‘[01m[Kget_rsp[m[K’:
+[01m[Krsp.c:9:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Krsp[m[K’ is used uninitialized in this function [[01;35m[K-Wuninitialized[m[K]
+   return [01;35m[Krsp[m[K;
+          [01;35m[K^~~[m[K
+cc -Wall -Og -std=c11    rsp.c   -o rsp
+[01m[Krsp.c:[m[K In function ‘[01m[Kget_rsp[m[K’:
+[01m[Krsp.c:9:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Krsp[m[K’ is used uninitialized in this function [[01;35m[K-Wuninitialized[m[K]
+   return [01;35m[Krsp[m[K;
+          [01;35m[K^~~[m[K
+objdump -d rsp > rsp.dump
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/rsp$ make
+cc -Wall -Og -std=c11 -S rsp.c
+cc -Wall -Og -std=c11    rsp.c   -o rsp
+objdump -d rsp > rsp.dump
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/rsp$ ./rsp 
+&stkVar = 0x7ffe3a5a249c; rsp = 0x7ffe3a5a2488
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/rsp$ make clean
+rm -f *~ *.o rsp.s rsp rsp.dump
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/rsp$ make
+cc -Wall -Og -std=c11 -S rsp.c
+cc -Wall -Og -std=c11    rsp.c   -o rsp
+objdump -d rsp > rsp.dump
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/rsp$ ./rsp 
+&stkVar = 0x7ffc10b08b5c; rsp = 0x7ffc10b08b48
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/rsp$ cd ..
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files$ ls [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks
+cpuid1	cpuid2	lab10.log  lab10_output.txt  parity  rip  rotate  rsp
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files$ cd  cpuid2
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/cpuid2$ ls
+cpuid  cpuid.o	cpuid.s  main.c  main.o  Makefile
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/cpuid2$ make
+cc -c -g -Wall -std=c11  cpuid.s -o cpuid.o
+cpuid.s: Assembler messages:
+cpuid.s:19: Error: operand type mismatch for `pop'
+cpuid.s:20: Error: expecting operand after ','; got nothing
+make: *** [Makefile:11: cpuid.o] Error 1
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab10/files/cpuid2$ exit
+
+Script done on 2019-10-24 17:51:25-04:00 [COMMAND_EXIT_CODE="2"]

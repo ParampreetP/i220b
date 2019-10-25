@@ -1,0 +1,37 @@
+::Exercise 1::
+
+	A) Mention and explain what you observe in rotate.s file and w.r.t.rotl() and rotr().
+
+In rotate.s, I see
+
+f:
+.LFB2:
+	.cfi_startproc
+	movl	%edx, %ecx
+	roll	%cl, %edi
+	rorl	%cl, %esi
+	leal	(%rdi,%rsi), %eax
+
+Observing these instruction, i see the instruction rol. The rol instruction is similar to shl except the shifted bits are rotated to the other end. 
+
+movl	%edx, %ecx - "sets %edx to %ecx. So whatever the value of %ecx is, it is the value of edx now"
+roll	%cl, %edi - "rotate (%edi) bits left in %cl"
+
+The ror instruction -
+
+rorl	%cl, %esi - "rotates (%esi) bits right in %cl."
+
+The leal instruction is used by a compiler to perform multi-step arithmetic operations in a single instruction.
+
+leal	(%rdi,%rsi), %eax - "%eax is set to %eax = %rdi + %rsi, then %eax is returned.. This is the same as the command, "return rotl(a, n) + rotr(b, n);". %eax is the return value, and it
+is equal to rotl(a,n) + rotr(b,n).
+
+I noticed that the assembly code for this program isnt as complicated as the c code.The assembly code is fairly easy to understand, knowing what each instruction does. 
+
+
+In rotate.c, ROTL() and ROTR() basically take a unsigned value (x), and shifts it by an x amount. The Parameter takes in a unsigned x and the ammount the user wants to shift it. ROTR shifts it right while ROTL shifts it left.
+
+
+
+
+
