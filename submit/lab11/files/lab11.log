@@ -1,0 +1,524 @@
+Script started on 2019-10-31 16:37:25-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time ls ~/cs220/labs/lab11/files
+ls: cannot access '/home/pparmar2/cs220/labs/lab11/files': No such file or directory
+
+real	0m0.005s
+user	0m0.002s
+sys	0m0.001s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ ls
+coverage  int-search  lab11.log  matmul-cache  parity
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ lstime ls ~/cs220/labs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/lab[1Ps/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+ls: cannot access '/cs220/labs/lab11/files': No such file or directory
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.000s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time ls /cs220/labs/lab11/files[C[C[C[C[1Ps/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs/[1Plab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs/l[1Pab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cws/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cos/lab11/filesks/lab11/files[C[1P/lab11/files[C
+ls: cannot access '/cs220/wok/lab11/files': No such file or directory
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.003s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ ls
+coverage  int-search  lab11.log  matmul-cache  parity
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ lstime ls /cs220/wok/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clabs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctime ls ~/cs220/labs/lab11/files
+ls: cannot access '/home/pparmar2/cs220/labs/lab11/files': No such file or directory
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.003s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time ls ~/cs220/labs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg/cs220/labs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci/cs220/labs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct/cs220/labs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-/cs220/labs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr/cs220/labs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce/cs[C20/labs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp/cs220/labs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co/cs220/labs/lab11/filesi/cs220/labs/lab11/files[Cs/cs220/labs/lab11/files[C[C[1P/cs220/labs/lab11/files[C[1P/cs220/labs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/c[1Ps220/labs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co/cs220/labs/lab11/filess/cs220/labs/lab11/files[C
+ls: cannot access '~git-repos/cs220/labs/lab11/files': No such file or directory
+
+real	0m0.008s
+user	0m0.000s
+sys	0m0.003s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time ls ~git-repos/cs220/labs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/~git-repos/cs220/labs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+ls: cannot access '/~git-repos/cs220/labs/lab11/files': No such file or directory
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.003s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time ls /~git-repos/cs220/labs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C~git-repos[1P/cs220/labs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/git-repos/cs220/labs/lab11/files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+coverage  int-search  matmul-cache  parity
+
+real	0m0.005s
+user	0m0.003s
+sys	0m0.000s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time sleep 5
+
+real	0m5.003s
+user	0m0.001s
+sys	0m0.001s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ sleep
+sleep: missing operand
+Try 'sleep --help' for more information.
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ sleep 1
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc-[K l[K-l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine [K[Apparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine [K[Apparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine[Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l 'fine [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktime wc -l `find /etc -type f 2>/dev/null` 2>/dev/null | tail
+     34 /etc/logrotate.conf.dpkg-old
+    618 /etc/matplotlibrc2
+     15 /etc/nftables.conf
+     56 /etc/ntp.conf.dpkg-old
+      3 /etc/sbclrc
+     40 /etc/usb_modeswitch.conf
+      1 /etc/video_format
+     21 /etc/xattr.conf
+     23 /etc/sysfs.conf
+ 166652 total
+
+real	0m1.363s
+user	0m0.029s
+sys	0m0.236s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l `find /etc -type f 2>/dev/null` 2>/dev/null | tail
+     34 /etc/logrotate.conf.dpkg-old
+    618 /etc/matplotlibrc2
+     15 /etc/nftables.conf
+     56 /etc/ntp.conf.dpkg-old
+      3 /etc/sbclrc
+     40 /etc/usb_modeswitch.conf
+      1 /etc/video_format
+     21 /etc/xattr.conf
+     23 /etc/sysfs.conf
+ 166652 total
+
+real	0m0.852s
+user	0m0.039s
+sys	0m0.186s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l `find /etc -type f 2>/dev/null` 2>/dev/null | tail
+     34 /etc/logrotate.conf.dpkg-old
+    618 /etc/matplotlibrc2
+     15 /etc/nftables.conf
+     56 /etc/ntp.conf.dpkg-old
+      3 /etc/sbclrc
+     40 /etc/usb_modeswitch.conf
+      1 /etc/video_format
+     21 /etc/xattr.conf
+     23 /etc/sysfs.conf
+ 166652 total
+
+real	0m0.660s
+user	0m0.028s
+sys	0m0.160s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time wc -l `find /etc -type f 2>/dev/null` 2>/dev/null | tail
+     34 /etc/logrotate.conf.dpkg-old
+    618 /etc/matplotlibrc2
+     15 /etc/nftables.conf
+     56 /etc/ntp.conf.dpkg-old
+      3 /etc/sbclrc
+     40 /etc/usb_modeswitch.conf
+      1 /etc/video_format
+     21 /etc/xattr.conf
+     23 /etc/sysfs.conf
+ 166652 total
+
+real	0m0.491s
+user	0m0.022s
+sys	0m0.151s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ i[Ktime 
+
+real	0m0.000s
+user	0m0.000s
+sys	0m0.000s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ time gre[K[Krep ""
+dasd
+dasd
+asdsad
+asdsad
+dasdasdasdsa
+dasdasdasdsa
+^C
+
+real	0m19.408s
+user	0m0.003s
+sys	0m0.000s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ cd[K[Kls
+coverage  int-search  lab11.log  matmul-cache  parity
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ cd parity/
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/parity$ ls
+main.c	Makefile  parity-c.c  parity-s.c
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/parity$ m,ake[K[K[K[Kake
+cc -g -Wall -std=c11 -O1   -c -o parity-c.o parity-c.c
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc   parity-c.o main.o   -o parity-c
+cc -g -Wall -std=c11 -O1   -c -o parity-s.o parity-s.c
+cc   parity-s.o main.o   -o parity-s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/parity$ run[K[K[K./parity-  -d[K[K[K-d 10
+bash: ./parity--d: No such file or directory
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/parity$ ./parity--d 10[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 c[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[Kity- c -d 10
+67: 0
+c6: 1
+69: 1
+73: 0
+51: 0
+ff: 1
+4a: 0
+ec: 0
+29: 0
+cd: 0
+3
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/parity$ ./parity- s -d 0[K10
+67: 0
+c6: 1
+69: 1
+73: 0
+51: 0
+ff: 1
+4a: 0
+ec: 0
+29: 0
+cd: 0
+3
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/parity$ ./parity-s -d 10[1P 10[1P 10
+3
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/parity$ ./parity-s  10-d 10c[C[C[C[C[C[C[2P[C[C[C[C[C[2@c [C[C[C[C[C[1P 10[1P 10
+3
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/parity$ time ./pa rity-c 10
+3
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.000s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/parity$ time ./parity-c 10[1@s[1P 10
+3
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/parity$ ls
+main.c	main.o	Makefile  parity-c  parity-c.c	parity-c.o  parity-s  parity-s.c  parity-s.o
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/parity$ cd ..
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ ls
+coverage  int-search  lab11.log  matmul-cache  parity
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ cd matmul-cache/ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K/
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ ls
+main.c	Makefile  matmul.h  simple-matmul.c  transpose-matmul.c
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ ls
+main.c	Makefile  matmul.h  simple-matmul.c  transpose-matmul.c
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ mak e
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc -g -Wall -std=c11 -O1   -c -o simple-matmul.o simple-matmul.c
+cc main.o simple-matmul.o  -o simple-matmul
+cc -g -Wall -std=c11 -O1   -c -o transpose-matmul.o transpose-matmul.c
+cc main.o transpose-matmul.o  -o transpose-matmul
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ ./s [K[Apparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ ./simple-matmul 4 1
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ make
+make: Nothing to be done for 'all'.
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ make clean
+rm -f simple-matmul transpose-matmul *.o *~
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ make
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc -g -Wall -std=c11 -O1   -c -o simple-matmul.o simple-matmul.c
+cc main.o simple-matmul.o  -o simple-matmul
+cc -g -Wall -std=c11 -O1   -c -o transpose-matmul.o transpose-matmul.c
+cc main.o transpose-matmul.o  -o transpose-matmul
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ make clean[K./simple-matmul 4 1
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ ./transpose-matmul 4 1
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ make c;eanm[K[K[K[K[Klean
+rm -f simple-matmul transpose-matmul *.o *~
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ make
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc -g -Wall -std=c11 -O1   -c -o simple-matmul.o simple-matmul.c
+cc main.o simple-matmul.o  -o simple-matmul
+cc -g -Wall -std=c11 -O1   -c -o transpose-matmul.o transpose-matmul.c
+cc main.o transpose-matmul.o  -o transpose-matmul
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ ./m[Ksd[Kimple-matmul 4 1
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ time ./simple-matmul 1500 1
+
+real	0m10.553s
+user	0m10.536s
+sys	0m0.016s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ time ./transpose-matmul 1500 1
+
+real	0m8.528s
+user	0m8.523s
+sys	0m0.004s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ for s in `seq 1000 500 2500`; \
+> do \
+> echo -n "*** Size $s: simple"; time ./simple-matmul $s 1 ; echo ; \
+> echo -n "*** Size $s: transpose"; time ./transpose-matmul $s 1 ; echo ; \
+> done
+*** Size 1000: simple
+real	0m2.839s
+user	0m2.822s
+sys	0m0.016s
+
+*** Size 1000: transpose^Cecho -n "*** Size $s: transpose"; time ./transpose-matmul $s 1 ; echo ; \
+real	0m0.476s
+user	0m0.475s
+sys	0m0.000s
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ echo -n "*** Size $s: transpose"; time ./transpose-matmul $s 1 ; echo ; \[K
+*** Size 1000: transposecke  
+real	0m2.502s
+user	0m2.496s
+sys	0m0.004s
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ c^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ cke[K[Klear
+[H[2J[3Jpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/matmul-cache$ cd ..
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ cd int-search/
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/int-search$ ls
+binary-search.c  int_compare.c	int_compare.h  linear-search.c	main.c	Makefile
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/int-search$ make
+cc -g -Wall -std=c11 -O1   -c -o linear-search.o linear-search.c
+[01m[Klinear-search.c:[m[K In function ‘[01m[Ksearch_for_element[m[K’:
+[01m[Klinear-search.c:6:12:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kbsearch[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+   int *p = [01;35m[Kbsearch[m[K(&element, a, nElements, sizeof(a[0]), int_compare);
+            [01;35m[K^~~~~~~[m[K
+[01m[Klinear-search.c:6:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kint_compare[m[K’ undeclared (first use in this function)
+   int *p = bsearch(&element, a, nElements, sizeof(a[0]), [01;31m[Kint_compare[m[K);
+                                                          [01;31m[K^~~~~~~~~~~[m[K
+[01m[Klinear-search.c:6:58:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+make: *** [<builtin>: linear-search.o] Error 1
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/int-search$ make
+cc -g -Wall -std=c11 -O1   -c -o linear-search.o linear-search.c
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc -g -Wall -std=c11 -O1   -c -o int_compare.o int_compare.c
+cc   linear-search.o main.o int_compare.o   -o linear-search
+cc -g -Wall -std=c11 -O1   -c -o binary-search.o binary-search.c
+cc   binary-search.o main.o int_compare.o   -o binary-search
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/int-search$ ./linear-search 100 1
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/int-search$ ./lk[K[K[K[Ktime ./linear-search 2000  2000
+
+real	0m0.346s
+user	0m0.345s
+sys	0m0.000s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/int-search$ ./binary-search 2000 2000 [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K0
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/int-search$ tg[K[Ktime ./binary-search 2000  2000
+
+real	0m0.351s
+user	0m0.350s
+sys	0m0.000s
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/int-search$ ced ..[K[K[K[K[Kd ..
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ ls
+coverage  int-search  lab11.log  matmul-cache  parity
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ [Kpparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ make
+make: *** No targets specified and no makefile found.  Stop.
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ ls
+coverage  int-search  lab11.log  matmul-cache  parity
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files$ cd coverage/
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ls
+coverage.c  Makefile
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ c[Kmake
+cc -g -Wall -std=c11 -fprofile-arcs -ftest-coverage    coverage.c   -o coverage
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./v[Kcoverage 200 20000[K 2999
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gvoc[K[K[Kcov coverage/g[K[K.gcda
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 100 400[K0 50
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 100 400 50[K[K[K[K[K[K[K[K[K[K1000 120321 3213 [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K3
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 1000 120321 3213 [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pgcov coverage.gcda 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+\
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ \[Kgcov coverage.gcda ./coverage 1000 120321 3213 [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K200 2000 2[K3000
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 200 2000 3000[5Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 200 2000 3000[K[K[K[K[K[K[K[K[K[K[K[K[K3[K2999 2000 200
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 2999 2000 200[5Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 2999 2000 200[K\\[K[K[K[K[K[K[K[K[K[K[K[K[K[Kw2[K[K2--[K[K00 2000 2999
+1000 120321 2113    3212
+compute(1000, 120321, 3212) = 730
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 200 2000 2999[5Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 200 2000 2999
+2 1000 12012 213^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 200 2000 2999[5Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 200 2000 2999
+190 9  0 100 12000
+compute(10, 100, 12000) = 652
+^[[A^[[A^[[A^[[B^[[B                    ^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 200 2000 2999[5Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 200 2000 2999
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 200 2000 2999[K[K[K[K[K[K[K[K[K[K[K[K[K119 212[K[K[K1212 121212
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 119 1212 121212[2P200 2000 2999[5Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 119 1212 121212[7Pgcov coverage.gcda [Kgcov coverage.gcda ./coverage 119 1212 121212[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K200[K[K000 2000 2000
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 2000 2000 2000[6Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 2000 2000 2000[K[K[K[K[K[K[K[K[K[K[K[K[K1[K[K1 2 3
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 1 2 3gcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda [3P./coverage 1 2 3[K[K[K[K[K212 318 40[K10
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 212 318 410[3Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 212 318 410[K[K[K[K[K[K[K[K[K[K[K212 320 410
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 212 320 410[3Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 212 320 410[K[K[K[K[K[K[K[K[K[K[K212 318 412
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 212 318 412[3Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 212 318 412[K[K[K[K[K[K[K320 332
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 212 320 332[3Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 212 320 332[K[K[K[K[K[K[K[K[K[K[K334 410 4[K910
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 334 410 910[3Pgcov coverage.gcda ./coverage 212 320 332[3Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 334 410 910[K[K[K[K[K[K[K[K[K[K[K334 410 912
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 334 410 912[3Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 334 410 912[K[K[K[K[K[K[K[K[K[K[K334 212[K[K[K412 318
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 334 412 318[3Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 334 412 318[K[K[K[K[K[K[K412 320
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 334 412 320[3Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 334 412 320[K[K[K[K[K[K[K[K[K[K[K212 318 410
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 212 318 410[3Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 212 318 410[K[K[K[K[K[K[K[K[K[K[K212 320 410
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 212 320 410[3Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 212 320 410[K[K[K[K[K[K[K[K[K[K[K212 320 332\[K
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 212 320 332[3Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 212 320 332[K[K[K[K[K[K[K318 412
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 212 318 412[3Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 212 318 412[K[K[K[K[K[K[K[K[K[K[K334 410 910
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 334 410 910[3Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 334 410 910[K[K[K[K[K[K[K[K[K[K[K334 410 912\
+> ^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 334 410 912\[4Pgcov coverage.gcda ./coverage 334 410 912\[K
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 334 410 912\[4Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 334 410 912[K[K[K[K[K[K[K[K[K[K[K23[K[K334 412 318
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 334 412 318[3Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ gcov coverage.gcda ./coverage 334 412 318[K[K[K[K[K[K[K[K[K[K[K334 412 320
+^C
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ ./coverage 334 412 320[3Pgcov coverage.gcda 
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ touch answeer/[K[K[Kr.txt
+pparmar2@g7-04:/import/linux/home1/pparmar2/git-repos/i220b/work/lab11/files/coverage$ exit
+
+Script done on 2019-10-31 17:38:12-04:00 [COMMAND_EXIT_CODE="0"]
