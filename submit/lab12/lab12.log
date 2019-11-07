@@ -1,0 +1,788 @@
+Script started on 2019-11-07 16:29:54-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12$ bash
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12$ basg-[K[K[Khsh[K[K[Ksh-she ll
+bash: bash-shell: command not found
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12$ la
+bash: la: command not found
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12$ x[Kla[Ks
+files  lab12  lab12.html  lab12.log  lab12.pdf	lab12.umt  Makefile
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12$ cd lab12 [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[Kfiles/
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files$ ls [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks
+quote-files
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files$ cd  quote-files/
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ [K[Apparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ [Kpparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo[K[K[K[Kls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo \\
+\
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo \'
+'
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo \*
+*
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echp[Ko \*HOME\'[K"\\
+*HOME"\
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo \dadasdasd\
+> asdasd
+dadasdasdasdasd
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ecgo[K[Kho ][K\'\[K[K[K'\'
+\
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echp[Ko \\[K[K'\\'
+\\
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo *$~'
+> '
+*$~
+
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo \dasdasdasd\
+> '
+> '
+dasdasdasd
+
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ eco[Kho '\''
+> '
+\
+
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo "\"\\"
+"\
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo "#[K$HOME"
+/home/pparmar2
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echp [K[Ko \
+> abc 
+abc
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo abc "$HOME"[3Pabc [Ko 
+
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo \
+> abc 
+abc
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo \
+> abc \
+> 123
+abc 123
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls $#
+ls: cannot access '0': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls $*
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls[K[Kecho \
+> ls $*
+ls
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ 
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ 
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ clear
+[H[2J[3Jpparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo \
+> ls $*[K
+ls $
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls $
+ls: cannot access '$': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls $*
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls A*
+ls: cannot access 'A*': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls 1*
+'1$2'  '1"2'
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls $*[K[K\$*
+ls: cannot access '$*': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls \
+> $*
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls \
+> '
+> '
+ls: cannot access ''$'\n': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ;s[K[Kls \
+> '*
+> '
+ls: cannot access '*'$'\n': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls '*
+> 
+> 
+> '
+ls: cannot access '*'$'\n\n\n': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ clear[K[K[K[K[Kls \[K'$[K[K\
+> '$'
+ls: cannot access '$': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls $'[K[K&[K%[K$'
+> $'[K'
+ls: cannot access ''$'\n''$': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ clear
+[H[2J[3Jpparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls \
+> '$'
+ls: cannot access '$': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls 1"[K;[K[K\
+> 12[K*
+'1$2'  '1"2'
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls \
+> 4[K$'
+> $'
+ls: cannot access ''$'\n''$': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ clear
+[H[2J[3Jpparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls \[K&[K$'
+> 
+> '
+ls: cannot access ''$'\n\n': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls \
+> 
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls \
+> '
+> $
+> '
+ls: cannot access ''$'\n''$'$'\n': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ clear
+[H[2J[3Jpparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ;ls[K[K[Kls \
+> "
+> $
+> "
+ls: cannot access ''$'\n''$'$'\n': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ clear
+[H[2J[3Jpparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls \
+> *
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 '**'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 '1$2'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 "'12"
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 '1"2'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 'a$b'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 '\\ab'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 'a"b'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 "a'b"
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ clear
+[H[2J[3Jpparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls \
+> &[K$*
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls \
+> $?
+ls: cannot access '0': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls $?
+ls: cannot access '2': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls $?[K[K\
+> ?
+ls: cannot access '?': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ l[Kclear
+[H[2J[3Jpparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls \
+> 4[K$
+ls: cannot access '$': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls \[K'$/[K'
+ls: cannot access '$': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ clear
+[H[2J[3Jpparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls 1*
+'1$2'  '1"2'
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ clear
+[H[2J[3Jpparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls[K[Kls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls a* b*
+ls: cannot access 'b*': No such file or directory
+'a$b'  'a"b'  "a'b"
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ clear
+[H[2J[3Jpparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls /[K\*\
+> '
+> '
+ls: cannot access '*'$'\n': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ clear
+[H[2J[3Jpparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls \[K$[K$\
+> $'
+> 
+> c[K^C
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ clear
+[H[2J[3Jpparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls[K[Kechpo[K[Ko ls
+ls
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo ls*
+ls*
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo ls\
+> $'[K'
+> ls[K[Kclear
+> ^C
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ eh[Kcho \s[Kks[K[Kls
+ls
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ecgo[K[Kho 'ls'
+ls
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo ls*
+ls*
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo *ls*
+*ls*
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ clear
+[H[2J[3Jpparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo hello
+hello
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo '[K\
+> hello
+hello
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo "ls *[K1*
+> "
+ls 1*
+
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls[K[Kecho -e "ls 1*"
+ls 1*
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo $PAH[KTH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo $HOME
+/home/pparmar2
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo ls
+ls
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo "$ls"
+
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo "ls"
+ls
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo [K[K[K[K[Kls '*
+> '
+ls: cannot access '*'$'\n': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls "'"*
+"'12"
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls "'"
+ls: cannot access "'": No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ;s[K[Kls "'*'[K"
+ls: cannot access ''\''*': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls "'*"[1P"[C*
+"'12"
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls "'"*[C*"*
+ls: cannot access ''\''**': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls "'*"*[C[1P"*[C[C
+"'12"
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls &*[K[K$*
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls $*
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls $**$*
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 '**'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 '1$2'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 "'12"
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 '1"2'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 'a$b'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 '\\ab'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 'a"b'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 "a'b"
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls *$*[C'$*[C'*
+'1$2'  'a$b'
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls *'$'*'$'*[1P'*
+> ^C
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls *'''*"'*[1P*"''"*[C[1P"*
+"'12"  "a'b"
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls *"'"*\'"*[1P"*
+> ^C
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls *"\"*[1P"\"**"\"*[C[C[C[K
+> ^C
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls *"\"'"[K'"\'[1P\'
+ls: cannot access '*\': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls *'[C[C\'"\"*'"*'''*$'*\$'*[1P'*
+'\\ab'
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls *'\'*[C[C[C[K[K[K[K[K*=[K[K
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls 'a[K[K*[K"a""b"
+ls: cannot access 'ab': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls *'a"[K'*'b'*
+'a$b'  '\\ab'  'a"b'  "a'b"
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls *'a'*'b'*?b'*[1P'*?a'*'?'*[1P'*'?'*
+ls: cannot access '*?*?*': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls *'?'*'?'*a'*'b'*
+'a$b'  '\\ab'  'a"b'  "a'b"
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls *'a'*'b'*[C[C[C[K[K[K[K[K[K[K[K[K[K ?[K-d -- ?[0-9]*
+"'12"
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- ?[0-9]*[C[C[1P9]*[1P9]*[1P]*c]*
+ls: cannot access '?[c]*': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- ?[c]*Cc]*.Cc]*[C[1P]*
+ls: cannot access '?[.C]*': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- ?[.C]*$.C]*[1PC]*
+ls: cannot access '?[]*': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- ?[$C]*[CC]*[1P]*cC]*[1P]*
+ls: cannot access '?[]*': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- ?[$c]*'$c]*c$c]*'$c]*[1Pc]*[1P]*
+ls: cannot access '?[c]*': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- ?['c']*[1P$c]*'c']**'c']**'c']*[1Pc']*[1P']*[1P]*
+'**'
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- ?[**]*?**]*?**]*[C[1P]*[1P]*
+ls: cannot access '?[??]*': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- ?[??]**??]**??]*[C[1P]*[1P]*
+'**'
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- ?[**]*[C[1P]*[1P]*?]*?]*
+ls: cannot access '?[??]*': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- ?[??]*[1P*[1P??*[C[1P*[C[C[C[K
+'**'   -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- ??[C''??'
+ls: cannot access '??': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- '??'[C[C[C[1P'[1P'?'[']'?]'
+ls: cannot access '?[?]': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- '?[?]'[C[C[C[C[C[K[1P?[?]
+ls: cannot access '?[?]': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- ?[?]'?][C']
+ls: cannot access '?[?]': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- ?['?'][2P?]'?[?]'[2P?'[2P??[??]***]*??]***]*'c']*[1P**]*'c']*[1P$c]*C]*.C]*[1Pc]*0-9]*[4P*'a'*'b'*-d -- ?[0-9]*[2Pc]*.C]*$C]*c]*'c']*[1P**]*[K[1P][1P][1P][C[K[K[]?]?]
+ls: cannot access '[??]': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- [??]'?]'?'?]
+ls: cannot access '[??]': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- ['?'?][1P?][C']
+ls: cannot access '[??]': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -d -- ['??'][1P[1@l
+ls: cannot access '[??]': No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ lsw -l[1P -l
+total 0
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 '**'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 '1$2'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 "'12"
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 '1"2'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 'a$b'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 '\\ab'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 'a"b'
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 "a'b"
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26  -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls -l -- ['??'][1P'][1P']*']*'][C[C**['**']*
+-rw-r--r-- 1 pparmar2 pparmar2 0 Nov  7 16:26 '**'
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ clear
+[H[2J[3Jpparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ env
+SHELL=/bin/bash
+SESSION_MANAGER=local/g7-05:@/tmp/.ICE-unix/1585,unix/g7-05:/tmp/.ICE-unix/1585
+WINDOWID=50331651
+QT_ACCESSIBILITY=1
+COLORTERM=truecolor
+XDG_CONFIG_DIRS=/etc/xdg
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+XDG_MENU_PREFIX=xfce-
+SSH_AUTH_SOCK=/tmp/ssh-wY2X02CmOorW/agent.1540
+DESKTOP_SESSION=lightdm-xsession
+SSH_AGENT_PID=1575
+GTK_MODULES=gail:atk-bridge
+XDG_SEAT=seat0
+PWD=/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files
+KRB5CCNAME=FILE:/tmp/krb5cc_14432_HaWoP7
+XDG_SESSION_DESKTOP=lightdm-xsession
+LOGNAME=pparmar2
+XDG_SESSION_TYPE=x11
+XAUTHORITY=/home/pparmar2/.Xauthority
+XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/pparmar2
+HOME=/home/pparmar2
+LANG=en_US.utf8
+XDG_CURRENT_DESKTOP=XFCE
+VTE_VERSION=5402
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+GLADE_CATALOG_PATH=:
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+USER=pparmar2
+DISPLAY=:0.0
+SHLVL=3
+XDG_VTNR=7
+XDG_SESSION_ID=2
+GLADE_MODULE_PATH=:
+XDG_RUNTIME_DIR=/run/user/14432
+GLADE_PIXMAP_PATH=:
+XDG_DATA_DIRS=/usr/share/xfce4:/usr/local/share/:/usr/share/:/usr/share
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+GDMSESSION=lightdm-xsession
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/14432/bus
+_=/usr/bin/env
+OLDPWD=/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo $HOPME[K[K[KME
+/home/pparmar2
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo $pa[K[KPATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo $xxx
+
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ xxx=23[K[K123
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echp[Kxxx=123echo $xxx
+123
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ env | grep ccc[K[K[Kxxx
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ s[Kexport xxx
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ enxport xxx[4@nv | grep[C[C[C[C
+xxx=123
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ expor [Kt xx=456
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ export xx=456nv | grep xxx[K
+xxx=123
+xx=456
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ecgo[K[Kxgo[K[K[Kgo[K[K[K[Kexprt[K[Kort [K[K[K[K[K[K[Kexc[K[Kcgo[K[Kc[Kho $[[Kp
+
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ p =[K[K=echo $PATH
+bash: /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games: No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo $p
+
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ec[K[Kp=[K[Kexcpo[K[K[Kport x[Kp=$PATH
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ export p=$PATH[C[C[C[C[C[C[C[C[C[C[C[7Pcho $p
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echio[K[Koi[K $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ restop[Kre
+bash: restore: command not found
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ lsd[K
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ ls '[K';[K[K'[K; wx[Kc *
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+0 **
+0 1$2
+0 '12
+0 1"2
+0 a$b
+0 \\ab
+0 a"b
+0 a'b
+0 total
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ find -L[K[K[K[K[K[K[Kfind -L ~/cs220 -name '*.c' 
+find: ‘/home/pparmar2/cs220’: No such file or directory
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ find -L ~/cs220 -name '*.c' | wc -l
+find: ‘/home/pparmar2/cs220’: No such file or directory
+0
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ find / -name '*.c' 2>/dev/null
+
+/backup/pparmar2/linux/2019/09-08/Desktop/cs120/exercise.c
+/backup/pparmar2/linux/2019/09-08/Desktop/cs120/exercise1.c
+/backup/pparmar2/linux/2019/09-08/Desktop/cs120/hello.c
+/backup/pparmar2/linux/2019/09-08/Desktop/cs120/assembler-lab.c
+/backup/pparmar2/linux/2019/09-08/Desktop/cs120/lab10.c
+/backup/pparmar2/linux/2019/09-08/Desktop/cs120/lab/lab2.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/labs/lab2/files/ex1/hello.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/labs/lab2/files/ex3/main.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/labs/lab2/files/ex3/quadr.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/labs/lab2/files/ex4/key-value.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/labs/lab2/files/ex4/main.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/labs/lab2/files/ex4/process-file.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/labs/lab3/files/ex1/hello.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/labs/lab3/files/ex2/hello.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/projects/prj1/prj1-sol/bits-to-ints.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/projects/prj1/prj1-sol/main.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/projects/prj1/prj1-sol/errors.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/slides/c-intro/code/count-1s-1.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/slides/c-intro/code/count-1s-2.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/slides/c-intro/code/endian.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/slides/c-intro/code/integer-sizes.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/slides/c-intro/code/kilo-powers.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/slides/c-intro/code/bases.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/slides/c-intro/code/out-bits.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/slides/c-intro/code/ptr-sum.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/slides/c-intro/code/robust-sum.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/slides/c-intro/code/sum-args.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/slides/c-intro/code/sum.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/slides/c-intro/code/wc.c
+/backup/pparmar2/linux/2019/09-08/git-repos/cs220/slides/intro/code/hello.c
+/backup/pparmar2/linux/2019/09-08/git-repos/i220b/submit/lab2/files/ex1/hello.c
+/backup/pparmar2/linux/2019/09-08/git-repos/i220b/submit/lab2/files/ex3/main.c
+/backup/pparmar2/linux/2019/09-08/git-repos/i220b/submit/lab2/files/ex3/quadr.c
+/backup/pparmar2/linux/2019/09-08/git-repos/i220b/submit/lab2/files/ex4/key-value.c
+/backup/pparmar2/linux/2019/09-08/git-repos/i220b/submit/lab2/files/ex4/main.c
+/backup/pparmar2/linux/2019/09-08/git-repos/i220b/submit/lab2/files/ex4/process-file.c
+/backup/pparmar2/linux/2019/09-08/git-repos/i220b/submit/lab3/files/ex1/hello.c
+/backup/pparmar2/linux/2019/09-08/git-repos/i220b/submit/lab3/files/ex2/hello.c
+/backup/pparmar2/linux/2019/09-08/git-repos/i220b/work/lab2/files/ex1/hello.c
+/backup/pparmar2/linux/2019/09-08/git-repos/i220b/work/lab2/files/ex3/main.c
+/backup/pparmar2/linux/2019/09-08/git-repos/i220b/work/lab2/files/ex3/quadr.c
+/backup/pparmar2/linux/2019/09-08/git-repos/i220b/work/lab2/files/ex4/key-value.c
+/backup/pparmar2/linux/2019/09-08/git-repos/i220b/work/lab2/files/ex4/main.c
+/backup/pparmar2/linux/2019/09-08/git-repos/i220b/work/lab2/files/ex4/process-file.c
+/backup/pparmar2/linux/2019/09-08/git-repos/i220b/work/lab3/files/ex1/hello.c
+/backup/pparmar2/linux/2019/09-08/git-repos/i220b/work/lab3/files/ex2/hello.c
+/backup/pparmar2/linux/2019/09-08/t1.c
+/backup/pparmar2/linux/2019/09-08/v.c
+/backup/pparmar2/linux/2019/09-08/x.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab2/files/ex1/hello.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab2/files/ex3/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab2/files/ex3/quadr.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab2/files/ex4/key-value.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab2/files/ex4/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab2/files/ex4/process-file.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab3/files/ex1/hello.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab3/files/ex2/hello.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab4/files/ex1/uints.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab4/files/ex2/ints.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab4/files/ex3/identify.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab4/files/ex4/negeq.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab4/files/ex6/0.1.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab4/files/ex7/nan.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab4/files/ex8/ulp.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab4/files/ex9/loop.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab5/files/ex1/pointers.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab5/files/ex2/in-pointers.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab5/files/ex3/bad-types.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab5/files/ex4/cast-types.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab5/files/ex5/void-pointers.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab5/files/ex6/in-voids.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab6/files/brk/brk.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab6/files/bug-program/bug-program.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab6/files/process-memory/process-memory.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab7/files/multiple-symbols/def1.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab7/files/multiple-symbols/def2.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab7/files/multiple-symbols/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab7/files/static-dynamic/log10.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab7/files/libgeom/circ.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab7/files/libgeom/rect.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab7/files/libgeom/testgeom.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab7/files/libvec/addvec.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab7/files/libvec/multvec.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab7/files/libvec/testvec.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab7/files/log10/log10.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab7/files/multiple-defs/f.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/labs/lab7/files/multiple-defs/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/misc/bin-num/220a/bin-num.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/misc/bin-num/220b/bin-num.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/projects/prj1-sol/bits-to-ints.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/projects/prj1-sol/errors.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/projects/prj1-sol/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/projects/prj1/prj1-sol/bits-to-ints.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/projects/prj1/prj1-sol/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/projects/prj1/prj1-sol/errors.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/projects/prj2/prj2-sol/stack.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/projects/prj2/prj2-sol/big-bits.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/projects/prj2/prj2-sol/errors.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/projects/prj2/prj2-sol/hex-util.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/projects/prj2/prj2-sol/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/adts/code/stack.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/c-intro/code/wc.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/c-intro/code/integer-sizes.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/c-intro/code/kilo-powers.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/c-intro/code/ptr-sum.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/c-intro/code/robust-sum.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/c-intro/code/sum-args.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/c-intro/code/count-1s-1.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/c-intro/code/count-1s-2.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/c-intro/code/endian.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/c-intro/code/bases.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/c-intro/code/out-bits.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/c-intro/code/sum.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/intro/code/hello.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/move/move.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/mstore/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/mstore/mstore.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/abs-diff.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/arith.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/cmp-sets.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/conditional-move.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/div-mod.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/dynamic-array.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/fact-do-while.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/fact-while.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/fact.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/find.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/indirect-goto.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/mul.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/multi-dim.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/no-frame.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/rect-array.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/rect.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/stack-frame.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/sum.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/swap.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/switch.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/simple/simple.c
+/backup/pparmar2/linux/2019/10-06/git-repos/cs220/slides/x86/code/sum1/sum1.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab2/files/ex1/hello.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab2/files/ex3/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab2/files/ex3/quadr.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab2/files/ex4/key-value.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab2/files/ex4/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab2/files/ex4/process-file.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab3/files/ex1/hello.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab3/files/ex2/hello.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab4/files/ex1/uints.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab4/files/ex2/ints.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab4/files/ex3/identify.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab4/files/ex4/negeq.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab4/files/ex6/0.1.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab4/files/ex7/nan.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab4/files/ex8/ulp.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab4/files/ex9/loop.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab5/files/ex1/pointers.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab5/files/ex2/in-pointers.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab5/files/ex3/bad-types.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab5/files/ex4/cast-types.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab5/files/ex5/void-pointers.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab5/files/ex6/in-voids.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab6/files/brk/brk.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab6/files/bug-program/bug-program.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab6/files/process-memory/process-memory.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab7/files/libgeom/circ.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab7/files/libgeom/rect.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab7/files/libgeom/testgeom.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab7/files/libvec/addvec.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab7/files/libvec/multvec.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab7/files/libvec/testvec.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab7/files/log10/log10.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab7/files/multiple-defs/f.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab7/files/multiple-defs/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab7/files/multiple-symbols/def1.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab7/files/multiple-symbols/def2.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab7/files/multiple-symbols/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/lab7/files/static-dynamic/log10.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/prj1/prj1-sol/bits-to-ints.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/prj1/prj1-sol/errors.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/submit/prj1/prj1-sol/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/prj1/prj1-sol/bits-to-ints.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/prj1/prj1-sol/errors.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/prj1/prj1-sol/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab2/files/ex1/hello.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab2/files/ex3/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab2/files/ex3/quadr.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab2/files/ex4/key-value.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab2/files/ex4/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab2/files/ex4/process-file.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab3/files/ex1/hello.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab3/files/ex2/hello.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab4/files/ex1/uints.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab4/files/ex2/ints.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab4/files/ex3/identify.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab4/files/ex4/negeq.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab4/files/ex6/0.1.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab4/files/ex7/nan.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab4/files/ex8/ulp.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab4/files/ex9/loop.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab5/files/ex6/in-voids.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab5/files/ex1/pointers.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab5/files/ex2/in-pointers.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab5/files/ex3/bad-types.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab5/files/ex4/cast-types.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab5/files/ex5/void-pointers.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab6/files/brk/brk.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab6/files/bug-program/bug-program.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab6/files/process-memory/process-memory.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab7/files/libgeom/circ.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab7/files/libgeom/rect.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab7/files/libgeom/testgeom.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab7/files/libvec/addvec.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab7/files/libvec/multvec.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab7/files/libvec/testvec.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab7/files/log10/log10.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab7/files/multiple-defs/f.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab7/files/multiple-defs/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab7/files/multiple-symbols/def1.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab7/files/multiple-symbols/def2.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab7/files/multiple-symbols/main.c
+/backup/pparmar2/linux/2019/10-06/git-repos/i220b/work/lab7/files/static-dynamic/log10.c
+^C
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ find / -name '*.c' 2>/dev/null >c-files.lst &
+[1] 12376
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo [K[K[K[Kxport path[K[K[K[KPATH-[K=''
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ echo $PATH
+
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ export path[K[K[K[KPATH=p[K[K[K[K[Kat[K[KTRH[K[K[KATG[KH=$p
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ export PATH=$p[C[C[C[C[C[C[C[C[C[C[C[4Pcho $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ JOBS
+bash: JOBS: command not found
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ jobs
+[1]+  Running                 find / -name '*.c' 2> /dev/null > c-files.lst &
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ kill %1
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ l[Kkill %1[3Pjobs
+[1]+  Terminated              find / -name '*.c' 2> /dev/null > c-files.lst
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12/files/quote-files$ cd ~
+pparmar2@g7-05:~$ pwd
+/home/pparmar2
+pparmar2@g7-05:~$ xx [K-1[K[K=123
+pparmar2@g7-05:~$ pwd; echo $xx; (xx=abc; cd /; pwd; echo $xx); pwd; echo $xx
+/home/pparmar2
+123
+/
+abc
+/home/pparmar2
+123
+pparmar2@g7-05:~$ grep -i 'MAIN(' `find ~/cs220/projects -name '*.[ch]'`
+find: ‘/home/pparmar2/cs220/projects’: No such file or directory
+^C
+pparmar2@g7-05:~$ jobs
+pparmar2@g7-05:~$ jpb[K[Kop[Kbs[K
+bash: job: command not found
+pparmar2@g7-05:~$ ls
+Arduino  Documents  git-repos  i220X  Pictures	Templates  Videos
+Desktop  Downloads  i220b      Music  Public	tmp
+pparmar2@g7-05:~$ wc -l
+^C
+pparmar2@g7-05:~$ wc -1
+wc: invalid option -- '1'
+Try 'wc --help' for more information.
+pparmar2@g7-05:~$ clear
+[H[2J[3Jpparmar2@g7-05:~$ grep -i 'MAIN(' `find ~/cs220/projects -name '*.[ch]'`
+find: ‘/home/pparmar2/cs220/projects’: No such file or directory
+ls
+^C
+pparmar2@g7-05:~$ ls
+Arduino  Documents  git-repos  i220X  Pictures	Templates  Videos
+Desktop  Downloads  i220b      Music  Public	tmp
+pparmar2@g7-05:~$ cd D
+Desktop/   Documents/ Downloads/ 
+pparmar2@g7-05:~$ cd Dcd D[K[K[K[K[Kc[K[K Desktop/
+pparmar2@g7-05:~/Desktop$ ls
+cs120  CS220  cs240  lab-6-spr19-ParampreetP
+pparmar2@g7-05:~/Desktop$ lscd Desktop/ls[Kgrep -i 'MAIN(' `find ~/cs220/projects -name '*.[ch]'` [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K`
+find: ‘/home/pparmar2/cs220/projects’: No such file or directory
+^C
+pparmar2@g7-05:~/Desktop$ grep -i 'MAIN(' `find ~/cs220/projects -name '*.[ch]'` [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -i 'MAIN(' `find ~/cs220/projects -name '*.[ch]'` [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+find: ‘/home/pparmar2/cs220/project’: No such file or directory
+^C
+pparmar2@g7-05:~/Desktop$ clear
+[H[2J[3Jpparmar2@g7-05:~/Desktop$ echo $?
+0
+pparmar2@g7-05:~/Desktop$ false; echo 123
+123
+pparmar2@g7-05:~/Desktop$ true; echo 123
+123
+pparmar2@g7-05:~/Desktop$ false && echo 123
+pparmar2@g7-05:~/Desktop$ rue && echo 123
+bash: rue: command not found
+pparmar2@g7-05:~/Desktop$ true && echo 123
+123
+pparmar2@g7-05:~/Desktop$ false || echo 123
+123
+pparmar2@g7-05:~/Desktop$ true || echo 123
+pparmar2@g7-05:~/Desktop$ sleep 10
+pparmar2@g7-05:~/Desktop$ echo[K[K[K[Ks[Kecho[K[K[K[Ksleep 5 | echp[Ko 123
+123
+^C
+pparmar2@g7-05:~/Desktop$ sleep 5
+pparmar2@g7-05:~/Desktop$ sleep 5 | echo 123[1@0[1@0
+123
+^[[A^C^
+pparmar2@g7-05:~/Desktop$ sleep 005 | echo 1235[K005 | echo 123[1@5
+123
+clear
+^C
+pparmar2@g7-05:~/Desktop$ clear
+[H[2J[3Jpparmar2@g7-05:~/Desktop$ sleep 5 | echo 123
+123
+^C
+pparmar2@g7-05:~/Desktop$ clear
+[H[2J[3Jpparmar2@g7-05:~/Desktop$ clearsleep 5 | echo 123[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kecho 123 && d [K[Ksleep 5
+123
+^C
+pparmar2@g7-05:~/Desktop$ echo 123 && sleep 5 [K [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kslee[p[K[Kp 5 && echo 123
+123
+pparmar2@g7-05:~/Desktop$ command1 && sleep 1m && command2
+bash: command1: command not found
+pparmar2@g7-05:~/Desktop$  ^C
+pparmar2@g7-05:~/Desktop$ ^D^C[K[K^C
+pparmar2@g7-05:~/Desktop$ ls
+cs120  CS220  cs240  lab-6-spr19-ParampreetP
+pparmar2@g7-05:~/Desktop$ clear
+[H[2J[3Jpparmar2@g7-05:~/Desktop$ ^C
+pparmar2@g7-05:~/Desktop$ cd
+pparmar2@g7-05:~$ ls
+Arduino  Documents  git-repos  i220X  Pictures	Templates  Videos
+Desktop  Downloads  i220b      Music  Public	tmp
+pparmar2@g7-05:~$ cd Desktop/[K[K[K[K[K[K[K[K[K[K[Kcd o[Ki220
+bash: cd: i220: No such file or directory
+pparmar2@g7-05:~$ cd i220[Kb
+bash: cd: i22b: No such file or directory
+pparmar2@g7-05:~$ ls
+Arduino  Documents  git-repos  i220X  Pictures	Templates  Videos
+Desktop  Downloads  i220b      Music  Public	tmp
+pparmar2@g7-05:~$ cd i220b
+pparmar2@g7-05:~/i220b$ ls
+README.md  submit  work
+pparmar2@g7-05:~/i220b$ cd work/
+pparmar2@g7-05:~/i220b/work$ ls
+lab10  lab12  lab3  lab5  lab7	lab9  prj2
+lab11  lab2   lab4  lab6  lab8	prj1  prj3
+pparmar2@g7-05:~/i220b/work$ cd lab12
+pparmar2@g7-05:~/i220b/work/lab12$ sl[K[Kls
+files  lab12  lab12.html  lab12.log  lab12.pdf	lab12.umt  Makefile
+pparmar2@g7-05:~/i220b/work/lab12$ exit
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12$ ^C
+pparmar2@g7-05:/import/linux/home1/pparmar2/git-repos/i220b/work/lab12$ exit
+
+Script done on 2019-11-07 17:37:21-05:00 [COMMAND_EXIT_CODE="130"]
