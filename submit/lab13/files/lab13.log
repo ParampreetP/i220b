@@ -1,0 +1,253 @@
+Script started on 2019-11-15 15:53:51-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+pparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files$ ls [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks
+file-char-count  file-copy  lab13.log  no-buffer-copy  rec-io  stdin-char-count
+pparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files$ to uch labn[K13.[K[K[K[K[K[Kanswer[K[K[K[K[K[Klab13.txt[K[K[K[K_output.txt
+pparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files$ cd  stdin-char-count/
+pparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files/stdin-char-count$ ls
+Makefile  stdin-char-count.c
+pparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files/stdin-char-count$ ./st[K[K[K[Kmake
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+pparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files/stdin-char-count$ std[K[K[K./stdin-char-count >[K<stdin-char-count.c [K
+EOF = -1
+^C
+pparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files/stdin-char-count$ make
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+[01m[Kstdin-char-count.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kstdin-char-count.c:11:3:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kexit[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+   [01;35m[Kexit[m[K(0);
+   [01;35m[K^~~~[m[K
+[01m[Kstdin-char-count.c:11:3:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’
+[01m[Kstdin-char-count.c:11:3:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdlib.h>[m[K’ or provide a declaration of ‘[01m[Kexit[m[K’
+[01m[Kstdin-char-count.c:2:1:[m[K
++[32m[K#include <stdlib.h>[m[K
+ 
+[01m[Kstdin-char-count.c:11:3:[m[K
+   [01;36m[Kexit[m[K(0);
+   [01;36m[K^~~~[m[K
+pparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files/stdin-char-count$ make
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+pparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files/stdin-char-count$ make./stdin-char-count <stdin-char-count.c
+EOF = -1
+^C
+pparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files/stdin-char-count$ make
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+pparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files/stdin-char-count$ make./stdin-char-count <stdin-char-count.c
+EOF = -1
+207
+pparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files/stdin-char-count$ make
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+pparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files/stdin-char-count$ make./stdin-char-count <stdin-char-count.c
+EOF = -1
+206
+pparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files/stdin-char-count$ wc stdin-char-count.c.
+wc: stdin-char-count.c.: No such file or directory
+pparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files/stdin-char-count$ wc stdin-char-count.c.[K
+ 13  32 206 stdin-char-count.c
+pparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files/stdin-char-count$ clear
+[H[2J[3Jpparmar2@g7-11:/import/linux/home1/pparmar2/git-repos/i220b/work/lab13/files/stdin-char-count$ cd
+pparmar2@g7-11:~$ ls
+Arduino  Documents  git-repos  i220X  Pictures	Templates  Videos
+Desktop  Downloads  i220b      Music  Public	tmp
+pparmar2@g7-11:~$ cd i220b
+pparmar2@g7-11:~/i220b$ ls
+README.md  submit  work
+pparmar2@g7-11:~/i220b$ cd work/
+pparmar2@g7-11:~/i220b/work$ ls
+lab10  lab12  lab2  lab4  lab6	lab8  prj1  prj3
+lab11  lab13  lab3  lab5  lab7	lab9  prj2  prj4
+pparmar2@g7-11:~/i220b/work$ cd lab13
+pparmar2@g7-11:~/i220b/work/lab13$ ls
+files  lab13.html  lab13.pdf  lab13.umt  Makefile
+pparmar2@g7-11:~/i220b/work/lab13$ cd files/
+pparmar2@g7-11:~/i220b/work/lab13/files$ ls
+file-char-count  lab13.log	   no-buffer-copy  stdin-char-count
+file-copy	 lab13_output.txt  rec-io
+pparmar2@g7-11:~/i220b/work/lab13/files$ cd file-cj[Khar-count/
+pparmar2@g7-11:~/i220b/work/lab13/files/file-char-count$ maske[K[K[Kke
+gcc -g -Wall -std=c11    file-char-count.c   -o file-char-count
+pparmar2@g7-11:~/i220b/work/lab13/files/file-char-count$ ./file-char-count file-char-count
+19536
+pparmar2@g7-11:~/i220b/work/lab13/files/file-char-count$ wc file-char-count
+   15   172 19536 file-char-count
+pparmar2@g7-11:~/i220b/work/lab13/files/file-char-count$ vqalk[K[K[Ka[K[Kalgrind ./file-char-count file-char-count.c
+==18919== Memcheck, a memory error detector
+==18919== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==18919== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==18919== Command: ./file-char-count file-char-count.c
+==18919== 
+566
+==18919== 
+==18919== HEAP SUMMARY:
+==18919==     in use at exit: 552 bytes in 1 blocks
+==18919==   total heap usage: 3 allocs, 2 frees, 9,768 bytes allocated
+==18919== 
+==18919== LEAK SUMMARY:
+==18919==    definitely lost: 0 bytes in 0 blocks
+==18919==    indirectly lost: 0 bytes in 0 blocks
+==18919==      possibly lost: 0 bytes in 0 blocks
+==18919==    still reachable: 552 bytes in 1 blocks
+==18919==         suppressed: 0 bytes in 0 blocks
+==18919== Rerun with --leak-check=full to see details of leaked memory
+==18919== 
+==18919== For counts of detected and suppressed errors, rerun with: -v
+==18919== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+pparmar2@g7-11:~/i220b/work/lab13/files/file-char-count$ make
+gcc -g -Wall -std=c11    file-char-count.c   -o file-char-count
+pparmar2@g7-11:~/i220b/work/lab13/files/file-char-count$ makevalgrind ./file-char-count file-char-count.c
+==19042== Memcheck, a memory error detector
+==19042== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==19042== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==19042== Command: ./file-char-count file-char-count.c
+==19042== 
+580
+==19042== 
+==19042== HEAP SUMMARY:
+==19042==     in use at exit: 0 bytes in 0 blocks
+==19042==   total heap usage: 3 allocs, 3 frees, 9,768 bytes allocated
+==19042== 
+==19042== All heap blocks were freed -- no leaks are possible
+==19042== 
+==19042== For counts of detected and suppressed errors, rerun with: -v
+==19042== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+pparmar2@g7-11:~/i220b/work/lab13/files/file-char-count$ ls
+file-char-count  file-char-count.c  Makefile
+pparmar2@g7-11:~/i220b/work/lab13/files/file-char-count$ cd ..
+pparmar2@g7-11:~/i220b/work/lab13/files$ ls
+file-char-count  lab13.log	   no-buffer-copy  stdin-char-count
+file-copy	 lab13_output.txt  rec-io
+pparmar2@g7-11:~/i220b/work/lab13/files$ cd file-copy/[K.c
+bash: cd: file-copy.c: No such file or directory
+pparmar2@g7-11:~/i220b/work/lab13/files$ ls
+file-char-count  lab13.log	   no-buffer-copy  stdin-char-count
+file-copy	 lab13_output.txt  rec-io
+pparmar2@g7-11:~/i220b/work/lab13/files$ cd file-copy/
+pparmar2@g7-11:~/i220b/work/lab13/files/file-copy$ ls
+file-copy.c  Makefile
+pparmar2@g7-11:~/i220b/work/lab13/files/file-copy$ make
+gcc -g -Wall -std=c11    file-copy.c   -o file-copy
+pparmar2@g7-11:~/i220b/work/lab13/files/file-copy$ ,f[K[K,.[K[K./file-copy 
+usage: ./file-copy SRC_NAME DEST_NAME
+pparmar2@g7-11:~/i220b/work/lab13/files/file-copy$ ./file-copy file-copy.c t
+pparmar2@g7-11:~/i220b/work/lab13/files/file-copy$ ./file-copy file-copy.c t[K
+usage: ./file-copy SRC_NAME DEST_NAME
+pparmar2@g7-11:~/i220b/work/lab13/files/file-copy$ ./file-copy file-copy.c t
+pparmar2@g7-11:~/i220b/work/lab13/files/file-copy$ ls -l file-copy t
+-rwxr-xr-x 1 pparmar2 pparmar2 19840 Nov 15 16:09 file-copy
+-rw-r--r-- 1 pparmar2 pparmar2  1195 Nov 15 16:09 t
+pparmar2@g7-11:~/i220b/work/lab13/files/file-copy$ cmpf i[Kfile.co[K[K[K-copy.c t
+bash: cmpf: command not found
+pparmar2@g7-11:~/i220b/work/lab13/files/file-copy$ cmpf file-copy.c t[1P
+pparmar2@g7-11:~/i220b/work/lab13/files/file-copy$ chmd[Kod a-w t
+pparmar2@g7-11:~/i220b/work/lab13/files/file-copy$ ./file-copy file-copy.c t
+cannot write t: Permission denied
+pparmar2@g7-11:~/i220b/work/lab13/files/file-copy$ cmp Makefile t
+Makefile t differ: byte 1, line 1
+pparmar2@g7-11:~/i220b/work/lab13/files/file-copy$ cd ..
+pparmar2@g7-11:~/i220b/work/lab13/files$ ls
+file-char-count  lab13.log	   no-buffer-copy  stdin-char-count
+file-copy	 lab13_output.txt  rec-io
+pparmar2@g7-11:~/i220b/work/lab13/files$ cd no-buffer-copy/
+pparmar2@g7-11:~/i220b/work/lab13/files/no-buffer-copy$ ls
+Makefile  no-buffer-copy.c
+pparmar2@g7-11:~/i220b/work/lab13/files/no-buffer-copy$ make
+gcc -g -Wall -std=c11    no-buffer-copy.c   -o no-buffer-copy
+pparmar2@g7-11:~/i220b/work/lab13/files/no-buffer-copy$ time ./no-buffer-copy `which gcc` /dev/null 1
+
+real	0m0.021s
+user	0m0.017s
+sys	0m0.000s
+pparmar2@g7-11:~/i220b/work/lab13/files/no-buffer-copy$ time ./no-buffer-copy `which gcc` /dev/null 0
+
+real	0m0.899s
+user	0m0.256s
+sys	0m0.642s
+pparmar2@g7-11:~/i220b/work/lab13/files/no-buffer-copy$ ccd[K[Kd ..
+pparmar2@g7-11:~/i220b/work/lab13/files$ ls
+file-char-count  lab13.log	   no-buffer-copy  stdin-char-count
+file-copy	 lab13_output.txt  rec-io
+pparmar2@g7-11:~/i220b/work/lab13/files$ cd rec-io/
+pparmar2@g7-11:~/i220b/work/lab13/files/rec-io$ ls
+dyn-array.c  gen-rand-points.c	point2.h    stat-points.c
+dyn-array.h  Makefile		points.dat
+pparmar2@g7-11:~/i220b/work/lab13/files/rec-io$ ./gen-rand-points 100 points.dat [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+bash: ./gen-rand-points: No such file or directory
+pparmar2@g7-11:~/i220b/work/lab13/files/rec-io$ make
+gcc -g -Wall -std=c11   -c -o gen-rand-points.o gen-rand-points.c
+gcc   gen-rand-points.o  -lm -o gen-rand-points
+gcc -g -Wall -std=c11   -c -o stat-points.o stat-points.c
+gcc -g -Wall -std=c11   -c -o dyn-array.o dyn-array.c
+gcc   stat-points.o dyn-array.o  -lm -o stat-points
+pparmar2@g7-11:~/i220b/work/lab13/files/rec-io$ make
+make: Nothing to be done for 'all'.
+pparmar2@g7-11:~/i220b/work/lab13/files/rec-io$ make./gen-rand-points 100 points.dat [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+average magnitude = 752.156
+pparmar2@g7-11:~/i220b/work/lab13/files/rec-io$ ./stat-points points.dat
+min = 43.4166
+average = 752.156
+median = 773.59
+max = 1306.49
+pparmar2@g7-11:~/i220b/work/lab13/files/rec-io$ vald[Kgrind ./gen-rand-points
+==20582== Memcheck, a memory error detector
+==20582== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20582== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==20582== Command: ./gen-rand-points
+==20582== 
+usage: ./gen-rand-points N_POINTS OUT_FILE
+==20582== 
+==20582== HEAP SUMMARY:
+==20582==     in use at exit: 0 bytes in 0 blocks
+==20582==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==20582== 
+==20582== All heap blocks were freed -- no leaks are possible
+==20582== 
+==20582== For counts of detected and suppressed errors, rerun with: -v
+==20582== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+pparmar2@g7-11:~/i220b/work/lab13/files/rec-io$ clear
+[H[2J[3Jpparmar2@g7-11:~/i220b/work/lab13/files/rec-io$ valgrind .//[Kstat-points
+==20600== Memcheck, a memory error detector
+==20600== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20600== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==20600== Command: ./stat-points
+==20600== 
+usage: ./stat-points BINARY_POINTS_FILE
+==20600== 
+==20600== HEAP SUMMARY:
+==20600==     in use at exit: 0 bytes in 0 blocks
+==20600==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==20600== 
+==20600== All heap blocks were freed -- no leaks are possible
+==20600== 
+==20600== For counts of detected and suppressed errors, rerun with: -v
+==20600== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+pparmar2@g7-11:~/i220b/work/lab13/files/rec-io$ valgrind ./stat-points point.dat [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+==20617== Memcheck, a memory error detector
+==20617== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20617== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==20617== Command: ./stat-points point.dat
+==20617== 
+cannot read point.dat: No such file or directory
+==20617== 
+==20617== HEAP SUMMARY:
+==20617==     in use at exit: 32 bytes in 1 blocks
+==20617==   total heap usage: 2 allocs, 1 frees, 584 bytes allocated
+==20617== 
+==20617== LEAK SUMMARY:
+==20617==    definitely lost: 0 bytes in 0 blocks
+==20617==    indirectly lost: 0 bytes in 0 blocks
+==20617==      possibly lost: 0 bytes in 0 blocks
+==20617==    still reachable: 32 bytes in 1 blocks
+==20617==         suppressed: 0 bytes in 0 blocks
+==20617== Rerun with --leak-check=full to see details of leaked memory
+==20617== 
+==20617== For counts of detected and suppressed errors, rerun with: -v
+==20617== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+pparmar2@g7-11:~/i220b/work/lab13/files/rec-io$ clear
+[H[2J[3Jpparmar2@g7-11:~/i220b/work/lab13/files/rec-io$ ls
+dyn-array.c  gen-rand-points	Makefile    stat-points
+dyn-array.h  gen-rand-points.c	point2.h    stat-points.c
+dyn-array.o  gen-rand-points.o	points.dat  stat-points.o
+pparmar2@g7-11:~/i220b/work/lab13/files/rec-io$ cd ..
+pparmar2@g7-11:~/i220b/work/lab13/files$ ^C
+pparmar2@g7-11:~/i220b/work/lab13/files$ exit
+
+Script done on 2019-11-15 16:20:33-05:00 [COMMAND_EXIT_CODE="130"]
