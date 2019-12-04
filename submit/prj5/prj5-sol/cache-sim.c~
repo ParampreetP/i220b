@@ -84,7 +84,7 @@ cache_sim_result(CacheSim *cache, MemAddr addr)
 {
   //@TODO
   CacheStatus status;
-  //CacheResult result  = { status, replaceAddr };
+  //CacheResult result  = { CACHE_MISS_WITH_REPLACE, replaceAddr };
   MemAddr newAddr = addr >> cache->param.nLineBits;
   newAddr <<= cache->param.nLineBits;
 
