@@ -113,10 +113,10 @@ cache_sim_result(CacheSim *cache, MemAddr addr)
   int replace = cache->param.replacement;
   if(replace == MRU_R){ //replacement strategy is MRU
     int ind = 0;
-    int least = cache->sets[set][0].ind;
+    int lowest = cache->sets[set][0].ind;
     for(int i = 0; i < nLines; i++){
-      if(least > cache->sets[set][i].ind){
-		least = cache->sets[set][i].ind;
+      if(lowest > cache->sets[set][i].ind){
+		lowest = cache->sets[set][i].ind;
 		ind = i;
       }
     }
@@ -125,10 +125,10 @@ cache_sim_result(CacheSim *cache, MemAddr addr)
   }
   else if(replace == LRU_R){ //replacement strategy is LRU
     int ind = 0;
-    int greatest = 0;
+    int highest = 0;
     for(int i = 0; i < nLines; i++){
-   		if(greatest < cache->sets[set][i].ind){
-			greatest = cache->sets[set][i].ind;
+   		if(highest < cache->sets[set][i].ind){
+			highest = cache->sets[set][i].ind;
 			ind = i;
       }
     }
